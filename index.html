@@ -1,751 +1,1022 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rj Films Production — Video Editor & Cinematographer</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
-*{margin:0;padding:0;box-sizing:border-box;}
-:root{--gold:#C8A96E;--gold2:#D4B483;--dark:#0e0d0b;--dark2:#141210;--dark3:#1c1a16;--dark4:#222018;--text:#f0ede6;--muted:#8a8070;}
-body{background:var(--dark);color:var(--text);font-family:'Inter',sans-serif;font-weight:300;overflow-x:hidden;font-size:15px;}
 
-/* ===================== NAV ===================== */
-nav{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:18px 50px;background:rgba(14,13,11,0.97);border-bottom:0.5px solid rgba(200,169,110,0.12);}
-.nav-left{display:flex;align-items:center;cursor:pointer;}
-.nav-links{display:flex;align-items:center;gap:36px;list-style:none;}
-.nav-links a{color:var(--text);text-decoration:none;font-size:14px;font-weight:400;letter-spacing:0.02em;transition:color 0.2s;cursor:pointer;}
-.nav-links a:hover,.nav-links a.active{color:var(--gold);}
-.btn-nav{background:transparent;border:1.5px solid var(--gold);color:var(--gold);padding:9px 22px;font-size:13px;font-family:'Inter',sans-serif;font-weight:500;cursor:pointer;border-radius:3px;letter-spacing:0.06em;transition:all 0.25s;text-decoration:none;}
-.btn-nav:hover{background:var(--gold);color:#000;}
 
-/* ===================== PAGE SYSTEM ===================== */
-.page{display:none;}
-.page.active{display:block;}
 
-/* ===================== SHARED ===================== */
-.glow-hover{transition:box-shadow 0.35s ease,border-color 0.35s ease,transform 0.25s ease;}
-.glow-hover:hover{box-shadow:0 0 22px rgba(200,169,110,0.35),0 0 6px rgba(200,169,110,0.18);border-color:rgba(200,169,110,0.55)!important;transform:translateY(-2px);}
-.sec-title{font-family:'Playfair Display',serif;font-size:42px;font-weight:500;color:var(--gold);text-align:center;margin-bottom:14px;}
-.sec-line{width:55px;height:1.5px;background:var(--gold);margin:0 auto 56px;}
-footer{background:var(--dark);border-top:0.5px solid rgba(200,169,110,0.1);padding:28px 40px;text-align:center;}
-footer p{font-size:12px;color:var(--muted);}
-footer span{display:block;margin-top:6px;font-size:11px;color:rgba(138,128,112,0.4);}
 
-/* ===================== HOME PAGE ===================== */
+Screenshot 2026-06-10 at 12.53.11 PM.png
+Screenshot 2026-06-10 at 12.53.16 PM.png
+esa kyu ara configer krne par kya krna 
+
+Rajat, screenshot dekh ke lag raha hai Netlify ko GitHub access mil gaya hai, lekin jis repository ko tu link karna chahta hai wo GitHub account me mil nahi rahi ya Netlify ko dikh nahi rahi.
+
+Ab ye kar:
+
+GitHub pe ja
+
+Apni repository check kar:
+
+Kya repository bani hui hai?
+
+Public ya Private hai?
+
+Repository ka naam kya hai?
+
+GitHub me repository list me dikhni chahiye.
+
+Ab second screenshot me:
+
+✅ "All repositories" already selected hai.
+
+Ab green Save button pe click kar.
+
+Uske baad:
+
+Window close kar.
+
+Netlify wale tab pe wapas aa.
+
+Page refresh kar (⌘ + R ya Ctrl + R).
+
+Agar repository fir bhi nahi dikhe:
+
+GitHub → Repository → Settings → General
+
+Check kar repository owner wahi account hai na: rajatsinghshah745-dotcom
+
+Mujhe GitHub ka repository page ka screenshot bhej de (jahan repo list dikh rahi ho). Main exact bata dunga problem kahan hai. Abhi lag raha hai repo create hi nahi hui ya galat GitHub account me hai.
+
+
+Screenshot 2026-06-10 at 12.54.03 PM.png
+esa ara 
+
+Haan bhai, isi screenshot me problem dikh rahi hai. 😄
+
+Green Save button disabled hai, matlab GitHub me koi naya change detect nahi hua.
+
+Ab ye kar:
+
+Is popup ko close kar de.
+
+GitHub pe ja.
+
+Check kar ki repo actually bani hui hai ya nahi.
+
+GitHub home pe ja:
+
+Profile photo → Your repositories
+
+Ya direct:
+github.com/rajatsinghshah745-dotcom?tab=repositories
+
+Mujhe us page ka screenshot bhej.
+
+Agar repo list me rjfilmsproduction, portfolio, ya website wali repo nahi dikh rahi, to pehle repo create karni padegi.
+
+Aur ek aur cheez:
+Netlify me "No repositories found" tab bhi aata hai jab GitHub account connect hai lekin us account me koi repository hi nahi hoti.
+
+Mujhe GitHub repositories page ka screenshot bhej de, fir main exact next click bata dunga.
+
+
+Screenshot 2026-06-10 at 12.56.28 PM.png
+kya krna 
+
+Bhai problem mil gayi. 👍
+
+Ye repo empty hai. Isme koi file hi nahi hai. Isi wajah se Netlify properly detect nahi kar raha.
+
+Ab GitHub wale page me:
+
+"uploading an existing file" par click kar.
+
+Fir:
+
+Apni website ka pura folder drag & drop kar de.
+
+index.html
+
+style.css
+
+script.js
+
+images folder
+
+jo bhi website ki files hain
+
+Neeche Commit changes par click kar.
+
+Jab upload ho jaye:
+
+Netlify tab par ja
+
+Refresh kar
+
+Repo list me rj-films-production dikh jana chahiye
+
+Agar website Claude ne banayi hai aur files tere Mac me hain, to mujhe website folder ka screenshot bhej de (Finder me files dikhni chahiye). Main bataunga exactly kaunsa folder upload karna hai.
+
+
+Screenshot 2026-06-10 at 12.57.54 PM.png
+Screenshot 2026-06-10 at 12.58.54 PM.png
+dkhra h kya krna 
+
+Agar sirf 1 HTML file hai aur website usi me bani hui hai, to wahi upload kar de.
+
+GitHub repo me:
+
+rj-films-production kholo
+
+uploading an existing file pe click karo
+
+Apni .html file drag & drop kar do (zyadatar index.html naam hona chahiye)
+
+Neeche Commit changes click karo
+
+⚠️ Agar file ka naam home.html, website.html, portfolio.html ya kuch aur hai, to uska naam pehle index.html kar dena.
+
+Upload hone ke baad repo me index.html dikhna chahiye.
+
+Agar sure nahi ho, to Finder me us HTML file ka screenshot bhej de. Main bata dunga rename karna hai ya direct upload.
+
+
+ab m koi bhi change krunga code m  tho wo website m ho jayega 
+
+Haan bhai, agar Netlify ko GitHub repo se connect kar diya hai, to uske baad:
+
+✅ GitHub repo me code change karke commit karega
+✅ Netlify automatically naya deploy chala dega
+✅ Website update ho jayegi
+
+Flow kuch aisa hoga:
+
+HTML/CSS/JS edit
+      ↓
+GitHub me upload/commit
+      ↓
+Netlify auto deploy
+      ↓
+Website update
+Lekin agar tu sirf apne Mac me HTML file edit karega aur GitHub me upload/commit nahi karega, to website update nahi hogi.
+
+Agar website Claude ne banayi hai aur tu future me aasani se edit karna chahta hai, to main tujhe bata sakta hu:
+
+GitHub Desktop se 1-click update kaise karte hain
+
+Ya Netlify Drag & Drop method jo aur bhi simple hai
+
+Abhi bata:
+Website sirf ek index.html file hai ya CSS/JS files bhi hain?
+
+
+Screenshot 2026-06-10 at 1.02.56 PM.png
+esa kyu ara 
+
+Bhai ye 404 Page Not Found aa raha hai kyunki Netlify ko website ki main file nahi mil rahi.
+
+Sabse common reasons:
+
+index.html naam nahi hai
+
+GitHub repo me file ka naam exactly index.html hona chahiye.
+
+File folder ke andar hai
+
+Galat:
+
+repo
+└── website/
+    └── index.html
+Sahi:
+
+repo
+└── index.html
+Deploy fail hua hai
+
+Netlify → Deploys tab me jaake check kar.
+
+Ab mujhe 2 screenshots bhej:
+
+✅ GitHub repo ke Code page ka screenshot (jahan files dikh rahi hain)
+
+✅ Netlify ke Deploys page ka screenshot
+
+Usse 10 second me pata chal jayega ki problem index.html ki hai, folder structure ki hai, ya deploy fail hua hai. Abhi bina wo screenshots dekhe exact reason batana mushkil hai, lekin 90% chance hai index.html root me nahi hai ya naam kuch aur hai.
+
+
+Screenshot 2026-06-10 at 1.03.46 PM.png
+
+Deploy to successful ho gaya hai bhai. ✅
+
+Matlab Netlify ki taraf se koi problem nahi hai.
+
+Ab 404 aa raha hai to 99% chance hai ki GitHub repo me index.html root me nahi hai ya file ka naam galat hai.
+
+Ab mujhe GitHub repo ka Code page dikha:
+
+GitHub me rj-films-production repo kholo
+
+Code tab pe click karo
+
+Jahan files/folders dikhte hain us page ka screenshot bhejo
+
+Mujhe dekhna hai:
+
+index.html hai ya nahi
+
+Root me hai ya kisi folder ke andar
+
+File ka exact naam kya hai
+
+Agar index.html nahi hai aur maan lo rjfilms_website.html hai, to Netlify homepage nahi dhoondh paayega aur 404 dega.
+
+Bas GitHub repo ke files wale page ka screenshot bhej, fir exact fix bata deta hoon. 🚀
+
+
+Screenshot 2026-06-10 at 1.04.24 PM.png
+
+Bhai ye screenshot Netlify settings ka hai, mujhe GitHub repo ke files nahi dikh rahe. 😄
+
+Ab ye kar:
+
+GitHub tab kholo (rj-films-production)
+
+Upar Code pe click karo
+
+Jahan file list dikh rahi ho (index.html, images, etc.)
+
+Us page ka screenshot bhej
+
+Ya simple bata:
+
+Kya repo me index.html dikh raha hai?
+
+Ya file ka naam kuch aur hai?
+
+Kya koi folder bana hua hai aur uske andar files hain?
+
+Agar website open karte hi 404 aa raha hai aur deploy successful hai, to lagbhag pakka:
+
+index.html root me nahi hai, ya
+
+Publish directory galat set ho gayi hai.
+
+GitHub repo ke file list ka screenshot bhej de, wahi se exact issue pakad lenge. 🚀
+
+
+Screenshot 2026-06-10 at 1.05.18 PM.png
+
+Mil gaya issue bhai. 🎯
+
+GitHub me file ka naam hai:
+
+❌ rjfilms_website.html
+
+Netlify homepage ke liye dhoondhta hai:
+
+✅ index.html
+
+Isi liye website 404 de rahi hai.
+
+Ab ye kar:
+
+GitHub me rjfilms_website.html pe click kar.
+
+Upar pencil (✏️ Edit) icon pe click kar.
+
+File naam change kar:
+
+rjfilms_website.html
+↓
+index.html
+Neeche scroll kar.
+
+Commit changes click kar.
+
+Uske baad:
+
+Netlify → Deploys
+
+"Trigger deploy" → "Deploy site"
+
+Ya 1-2 minute wait kar, auto deploy ho jayega.
+
+Fir rjfilmsproduction.in refresh kar.
+
+Agar CSS aur images bhi use ki hain aur sirf HTML upload ki hai, to website khul jayegi lekin styling missing ho sakti hai. Pehle index.html rename kar, fir website open karke screenshot bhej dena. 🚀
+
+
+kyua tum photodkh k bta skte ho. konsa kiska code h ? ya kha milega ?
+
+Haan bhai, photo dekh ke kaafi had tak bata sakta hoon. 😄
+
+Agar tu mujhe:
+
+GitHub repo ka screenshot
+
+VS Code ka screenshot
+
+HTML file ka screenshot
+
+Ya code ka screenshot bhejta hai
+
+To main bata sakta hoon:
+
+✅ Kaunsi file main website hai
+✅ Kaunsa HTML hai
+✅ CSS kahan hai
+✅ JavaScript kahan hai
+✅ Kaunsa code Hero Section ka hai
+✅ Kaunsa code Logo ka hai
+✅ Kaunsa code About Me ka hai
+✅ Kaunsa code Contact Form ka hai
+
+Abhi tere screenshot se maine identify kar liya tha ki:
+
+rjfilms_website.html
+Ye hi teri main website file hai aur isi ko index.html rename karna hai.
+
+Agar tu ye puch raha hai ki:
+
+"Website me jo section dikh raha hai uska code kahan milega?"
+
+To website ka screenshot bhej aur main bata dunga kis section ka code HTML me kis jagah hoga aur kya search karna hai.
+
+Bas screenshot ya code bhej de, main line-by-line guide kar dunga. 👍
+
+
+Screenshot 2026-06-10 at 1.08.22 PM.png
+y glow thoda length m km krna h niche s kha milega eska code konse number par
+
+Bhai screenshot dekh ke main exact line number nahi bata sakta, kyunki line numbers code file me depend karte hain. Lekin glow ka code usually CSS me hoga.
+
+Apni HTML/CSS me search kar:
+
+box-shadow:
+ya
+
+filter: blur(
+ya
+
+radial-gradient(
+ya
+
+.hero-glow
+.glow
+.background-glow
+Tere screenshot jaisa glow lag raha hai ki kuch aisa code hoga:
+
+.glow {
+    width: 800px;
+    height: 800px;
+    filter: blur(120px);
+}
+Ya:
+
+background: radial-gradient(circle,
+rgba(212,145,45,0.5) 0%,
+transparent 70%);
+Niche se glow kam karna hai to:
+
+height: 800px;
+ko kam kar de:
+
+height: 500px;
+ya
+
+bottom: -200px;
+ko:
+
+bottom: -350px;
+kar de.
+
+Sabse fast tarika:
+
+GitHub me index.html kholo.
+
+Edit (✏️) pe click karo.
+
+glow, blur, radial-gradient, ya box-shadow search karo (Cmd + F).
+
+Us code ka screenshot bhej de.
+
+Phir main exact bata dunga kis value ko 800 se 500 ya kis line ko change karna hai. Abhi sirf website ka screenshot dekh ke exact line number batana possible nahi hai.
+
+
+ager m html upload kru tho muje number bta doge ?
+
+Bilkul bhai. 👍
+
+Agar tu HTML file upload kar de (ya pura index.html code paste kar de), to main:
+
+✅ Exact line number bata dunga
+✅ Glow ka code kahan hai bata dunga
+✅ Kitni value kam karni hai bata dunga
+✅ Niche ka glow, side ka glow, blur, shadow sab identify kar dunga
+✅ Chahe to modified code bhi de dunga jo direct replace kar sake
+
+Sabse easy:
+
+index.html upload kar de yahan
+
+Ya code copy-paste kar de
+
+Phir main bolunga kuch aisa:
+
+Line 842 pe .hero-glow hai
+height: 900px; ko 500px kar de
+aur bottom: -150px; ko -300px kar de
+
+File bhej de, main exact spot nikal deta hoon. 🚀
+
+
+
+rjfilms_website.html
+File
+number btao kha milega 
+
+Haan bhai, mil gaya. 😄
+
+Jo glow tu screenshot me dikha raha tha, uska main source ye hai:
+
+.yt-frame-wrap{
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.85),
+    0 20px 60px rgba(0,0,0,0.65),
+    0 40px 100px rgba(180,120,40,0.28),
+    0 70px 140px rgba(160,100,20,0.22),
+    0 100px 180px rgba(0,0,0,0.5);
+}
+File ke top me, .yt-frame-wrap section me hai. 
+
+
+Niche wala glow kam karna hai to:
+
+0 70px 140px rgba(160,100,20,0.22),
+0 100px 180px rgba(0,0,0,0.5);
+isko replace kar:
+
+0 40px 80px rgba(160,100,20,0.12),
+0 60px 100px rgba(0,0,0,0.25);
+Aur hover effect me bhi hai:
+
+.yt-frame-wrap:hover{
+  box-shadow:
+    ...
+    0 80px 180px rgba(190,130,30,0.38),
+    0 120px 220px rgba(160,100,20,0.28),
+    ...
+}
+Isko kar:
+
+0 50px 100px rgba(190,130,30,0.18),
+0 70px 120px rgba(160,100,20,0.12),
+Bas ye 4 values change kar. Glow aadha ho jayega aur niche itna lamba spread nahi hoga. 🚀
+
+Agar aur premium look chahiye to main exact cinematic values bhi de sakta hoon jo Apple/A24 style soft glow jaisi lagen.
+
+
+number tho bta konse number oar milega wo 
+
+Bhai exact line number tabhi bat sakta hoon jab poori file line numbers ke saath open ho. Jo file mujhe mili hai usme line numbers nahi dikh rahe.
+
+Lekin:
+
+File ke top ke andar CSS section me hai.
+
+Search kar (Cmd + F) aur ye likh:
+
+.yt-frame-wrap{
+Ya search kar:
+
+0 100px 180px
+Ya:
+
+box-shadow:
+Ye file ke shuru ke CSS part me hi mil jayega, lagbhag first 50-100 lines ke andar.
+
+Aur agar exact line number hi chahiye, to GitHub me:
+
+index.html kholo
+
+Pencil (Edit) pe click karo
+
+CSS wala area khol ke screenshot bhej de jahan left side line numbers dikh rahe hon
+
+Fir main bol dunga:
+👉 "Line 58"
+👉 "Line 63"
+👉 "Line 72"
+
+exact number. Abhi jo content mila hai usme line numbering nahi hai.
+
+
+
+Pasted text(16).txt
+Document
+ye lo code ab btao kha pasete kru 
+
+Haan bhai mil gaya. Glow yahan se aa raha hai. 
+
+
+Is block ko dhundho:
+
 .yt-frame-wrap{
   width:100%;
-  background:#f1f1f1;
-  border-radius:14px;
-  overflow:visible;
-  margin-bottom:20px;
-  position:relative;
-  transition: box-shadow 0.5s ease, transform 0.45s ease;
-  cursor:pointer;
- box-shadow:
+  ...
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.85),
+    0 20px 60px rgba(0,0,0,0.65),
+    0 40px 100px rgba(180,120,40,0.28),
+    0 70px 140px rgba(160,100,20,0.22),
+    0 100px 180px rgba(0,0,0,0.5);
+}
+Niche wala lamba glow ye 2 lines bana rahi hain:
+
+0 70px 140px rgba(160,100,20,0.22),
+0 100px 180px rgba(0,0,0,0.5);
+Agar glow aadha karna hai to replace kar de:
+
+0 30px 60px rgba(180,120,40,0.15),
+0 50px 80px rgba(0,0,0,0.25);
+Ya bilkul subtle chahiye to:
+
+box-shadow:
+  0 4px 20px rgba(0,0,0,0.85),
+  0 15px 40px rgba(0,0,0,0.45),
+  0 20px 50px rgba(180,120,40,0.12);
+GitHub me:
+
+rjfilms_website.html open karo
+
+Pencil (Edit) icon
+
+yt-frame-wrap search karo (Cmd + F)
+
+Upar wala box-shadow replace karo
+
+Commit changes
+
+30-60 sec wait karo Netlify deploy ke liye
+
+Fir screenshot bhej dena, aur bhi cinematic bana denge.
+
+
+number tho btao konse number par milega muje wo kya m search mnhi kr skta 
+
+Bhai agar GitHub editor me ho to Cmd + F (Mac) ya Ctrl + F (Windows) hi easiest hai. Exact line number batana mushkil hai kyunki GitHub edit mode me line numbers shift ho jate hain.
+
+Tu search me ye paste kar:
+
+.yt-frame-wrap{
+Ya:
+
+0 100px 180px
+Ye file ke shuru ke CSS section me, lagbhag first 40-70 lines ke aas-paas milega. 
+
+
+Jab mil jaye, us pure block ko:
+
+box-shadow:
+  0 4px 20px rgba(0,0,0,0.85),
+  0 20px 60px rgba(0,0,0,0.65),
+  0 40px 100px rgba(180,120,40,0.28),
+  0 70px 140px rgba(160,100,20,0.22),
+  0 100px 180px rgba(0,0,0,0.5);
+replace kar dena.
+
+Agar search ka option hi nahi mil raha, to GitHub edit page ka screenshot bhej de jahan code dikh raha ho. Main arrow laga ke bata dunga exactly kahan click karna hai. 😄
+
+
+Haan bhai, agar:
+
+✅ File GitHub repo me hai
+✅ Netlify us repo se connected hai
+✅ Tu Commit changes karta hai
+
+To Netlify automatically naya deploy karega aur website update ho jayegi.
+
+Flow:
+
+Code Edit
+   ↓
+Commit Changes
+   ↓
+Netlify Auto Deploy
+   ↓
+Website Update
+Commit ke baad:
+
+30 second se 2 minute tak wait kar
+
+Netlify → Deploys me "Published" aa jayega
+
+Website refresh kar
+
+Bas ek baat:
+Commit karne se pehle code ka backup rakh lena, ya agar darr lag raha hai to mujhe exact code bhej de, main modified version de dunga. Fir tu sirf copy-paste karke commit karega. 👍
+
+
+hua nhi xuch 
+
+Bhai agar Commit Changes ho gaya aur website me koi farq nahi aaya, to 3 possibilities hain:
+
+Galat code edit hua
+
+Jo glow tu dekh raha hai, shayad uska code kisi aur section me hai.
+
+Netlify deploy complete nahi hua
+
+Netlify → Deploys me dekh, latest deploy "Published" hai ya nahi.
+
+Browser cache
+
+Hard refresh kar:
+
+Mac: Cmd + Shift + R
+
+Windows: Ctrl + F5
+
+Ab sabse fast tareeka:
+
+👉 Website ka current URL bhej de (rjfilmsproduction.in ya Netlify URL).
+
+Aur GitHub me jo code tune change kiya uska screenshot bhej de.
+
+Main dekh ke bata dunga:
+
+code sahi jagah edit hua ya nahi,
+
+aur glow actually kis CSS se aa raha hai.
+
+
+https://rjfilmsproduction.in/
+
+Bhai maine website dekhi aur jo tune code change kiya tha usse kuch khaas farq isliye nahi dikha kyunki jo glow tu screenshot me dekh raha tha, woh shayad browser cache ya hover state se bhi aa raha hai.
+
+Ab ye kar:
+
+GitHub me ja.
+
+Search kar:
+
+.yt-frame-wrap{
+Pura box-shadow: block hata ke ye paste kar:
+
+box-shadow:
   0 4px 20px rgba(0,0,0,0.65),
   0 12px 35px rgba(0,0,0,0.35),
   0 20px 45px rgba(180,120,40,0.08);
-.yt-frame-wrap > *{border-radius:14px;overflow:hidden;}
+Hover wala block bhi search kar:
+
 .yt-frame-wrap:hover,.yt-frame-wrap:active{
-  transform: translateY(-6px) scale(1.009);
-  box-shadow:
-    0 0 0 1px rgba(200,169,110,0.22),
-    0 4px 24px rgba(0,0,0,0.88),
-    0 20px 70px rgba(0,0,0,0.7),
-    0 45px 120px rgba(210,145,50,0.45),
-    0 80px 180px rgba(190,130,30,0.38),
-    0 120px 220px rgba(160,100,20,0.28),
-    0 0 90px rgba(200,169,110,0.16);
+Aur uske andar ka box-shadow: replace kar:
+
+box-shadow:
+  0 0 0 1px rgba(200,169,110,0.15),
+  0 10px 35px rgba(0,0,0,0.45),
+  0 20px 60px rgba(210,145,50,0.12);
+Commit Changes
+
+Netlify Deploys me latest deploy complete hone ka wait kar.
+
+Hard refresh:
+
+Mac: Cmd + Shift + R
+
+Agar phir bhi same glow dikhe, mujhe GitHub ka edited code wala screenshot bhej. Ho sakta hai tu galat .yt-frame-wrap edit kar raha ho ya website par koi doosra glow layer bhi ho. Website live hai, isliye exact code dekh kar next step bata dunga. 
+
+
+/* ===================== NAV ===================== */
+nav{position;top:0;left:0;right:0;z-index:999;display;align-items;justify-content;padding:18px 50px;background(14,13,11,0.97);border-bottom:0.5px solid rgba(200,169,110,0.12);}
+.nav-left{display;align-items;cursor;}
+.nav-links{display;align-items;gap:36px;list-style;}
+.nav-links a{color(--text);text-decoration;font-size:14px;font-weight:400;letter-spacing:0.02em;transition 0.2s;cursor;}
+.nav-links a,.nav-links a.active{color(--gold);}
+.btn-nav{background;border:1.5px solid var(--gold);color(--gold);padding:9px 22px;font-size:13px;font-family:'Inter',sans-serif;font-weight:500;cursor;border-radius:3px;letter-spacing:0.06em;transition 0.25s;text-decoration;}
+.btn-nav{background(--gold);color:#000;}
+
+/* ===================== PAGE SYSTEM ===================== */
+.page{display;}
+.page.active{display;}
+
+/* ===================== SHARED ===================== */
+.glow-hover{transition 0.35s ease,border-color 0.35s ease,transform 0.25s ease;}
+.glow-hover{box-shadow:0 0 22px rgba(200,169,110,0.35),0 0 6px rgba(200,169,110,0.18);border-color(200,169,110,0.55)!important;transform(-2px);}
+.sec-title{font-family:'Playfair Display',serif;font-size:42px;font-weight:500;color(--gold);text-align;margin-bottom:14px;}
+.sec-line{width:55px;height:1.5px;background(--gold);margin:0 auto 56px;}
+footer{background(--dark);border-top:0.5px solid rgba(200,169,110,0.1);padding:28px 40px;text-align;}
+footer p{font-size:12px;color(--muted);}
+footer span{display;margin-top:6px;font-size:11px;color(138,128,112,0.4);}
+
+/* ===================== HOME PAGE ===================== */
+.yt-frame-wrap{
+width:100%;
+background:#f1f1f1;
+border-radius:14px;
+overflow;
+margin-bottom:36px;
+position;
+transition: box-shadow 0.5s ease, transform 0.45s ease;
+cursor;
+box-shadow:
+0 4px 20px rgba(0,0,0,0.85),
+0 20px 60px rgba(0,0,0,0.65),
+0 40px 100px rgba(180,120,40,0.28),
+0 70px 140px rgba(160,100,20,0.22),
+0 100px 180px rgba(0,0,0,0.5);
 }
-.yt-browser-bar{background:#f1f1f1;padding:10px 16px;display:flex;align-items:center;gap:8px;}
+.yt-frame-wrap > *{border-radius:14px;overflow;}
+.yt-frame-wrap,.yt-frame-wrap{
+transform: translateY(-6px) scale(1.009);
+box-shadow:
+0 0 0 1px rgba(200,169,110,0.22),
+0 4px 24px rgba(0,0,0,0.88),
+0 20px 70px rgba(0,0,0,0.7),
+0 45px 120px rgba(210,145,50,0.45),
+0 80px 180px rgba(190,130,30,0.38),
+0 120px 220px rgba(160,100,20,0.28),
+0 0 90px rgba(200,169,110,0.16);
+}
+.yt-browser-bar{background:#f1f1f1;padding:10px 16px;display;align-items;gap:8px;}
 .yt-dot{width:10px;height:10px;border-radius:50%;}
-.yt-search{flex:1;background:white;border-radius:20px;height:28px;display:flex;align-items:center;padding:0 12px;max-width:380px;margin:0 auto;border:0.5px solid #ddd;}
+.yt-search{flex:1;background;border-radius:20px;height:28px;display;align-items;padding:0 12px;max-width:380px;margin:0 auto;border:0.5px solid #ddd;}
 .yt-search span{font-size:11px;color:#aaa;}
-.yt-video-area{background:#0a0a0a;aspect-ratio:16/9;position:relative;display:flex;align-items:flex-end;}
-.yt-video-bg{position:absolute;inset:0;background:linear-gradient(160deg,#2c1e0e 0%,#1a1208 35%,#0d0b08 70%,#080604 100%);}
-.yt-controls{position:relative;z-index:2;width:100%;background:linear-gradient(transparent,rgba(0,0,0,0.92));padding:12px 12px 6px;}
-.yt-title-bar{color:white;font-size:12px;font-weight:500;margin-bottom:6px;text-align:left;}
-.yt-row{display:flex;align-items:center;gap:6px;margin-bottom:5px;flex-wrap:wrap;}
+.yt-video-area{background:#0a0a0a;aspect-ratio:16/9;position;display;align-items;}
+.yt-video-bg{position;inset:0;background(160deg,#2c1e0e 0%,#1a1208 35%,#0d0b08 70%,#080604 100%);}
+.yt-controls{position;z-index:2;width:100%;background(transparent,rgba(0,0,0,0.92));padding:12px 12px 6px;}
+.yt-title-bar{color;font-size:12px;font-weight:500;margin-bottom:6px;text-align;}
+.yt-row{display;align-items;gap:6px;margin-bottom:5px;flex-wrap;}
 .yt-avatar{width:22px;height:22px;border-radius:50%;background:#555;flex-shrink:0;}
 .yt-chan{font-size:10px;color:#ccc;}
 .yt-badge{border-radius:14px;padding:2px 9px;font-size:10px;font-weight:600;}
 .yt-progressbar{height:2px;background:#555;border-radius:1px;margin:5px 0 3px;}
-.yt-progress-fill{height:100%;background:red;width:5%;border-radius:1px;}
-.yt-bottom{display:flex;align-items:center;justify-content:space-between;}
+.yt-progress-fill{height:100%;background;width:5%;border-radius:1px;}
+.yt-bottom{display;align-items;justify-content;}
 .yt-playtime{font-size:10px;color:#ccc;}
-.btn-hire{background:rgba(200,169,110,0.85);border:2px solid var(--gold);color:#1a1208;padding:15px 56px;font-size:16px;font-family:'Playfair Display',serif;font-weight:600;cursor:pointer;border-radius:6px;letter-spacing:0.05em;transition:all 0.3s;}
-.btn-hire:hover{background:var(--gold);box-shadow:0 0 28px rgba(200,169,110,0.45);}
-.btn-book{background:rgba(200,169,110,0.82);border:2px solid var(--gold);color:#1a1208;padding:14px 50px;font-size:15px;font-family:'Playfair Display',serif;font-weight:500;cursor:pointer;border-radius:6px;letter-spacing:0.04em;transition:all 0.3s;}
-.btn-book:hover{background:var(--gold);box-shadow:0 0 24px rgba(200,169,110,0.4);}
-.hero-inner{max-width:1080px;margin:0 auto;padding:0 40px 50px;display:flex;flex-direction:column;align-items:center;text-align:center;}
+.btn-hire{background(200,169,110,0.85);border:2px solid var(--gold);color:#1a1208;padding:15px 56px;font-size:16px;font-family:'Playfair Display',serif;font-weight:600;cursor;border-radius:6px;letter-spacing:0.05em;transition 0.3s;}
+.btn-hire{background(--gold);box-shadow:0 0 28px rgba(200,169,110,0.45);}
+.btn-book{background(200,169,110,0.82);border:2px solid var(--gold);color:#1a1208;padding:14px 50px;font-size:15px;font-family:'Playfair Display',serif;font-weight:500;cursor;border-radius:6px;letter-spacing:0.04em;transition 0.3s;}
+.btn-book{background(--gold);box-shadow:0 0 24px rgba(200,169,110,0.4);}
+.hero-inner{max-width:1080px;margin:0 auto;padding:0 40px 50px;display;flex-direction;align-items;text-align;}
 
 /* SERVICES */
-.services-wrap{background:var(--dark2);padding:90px 50px;}
+.services-wrap{background(--dark2);padding:90px 50px;}
 .services-inner{max-width:1180px;margin:0 auto;}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-.svc-col{background:var(--dark3);border:0.5px solid rgba(200,169,110,0.18);border-radius:10px;padding:44px 28px 32px;transition:box-shadow 0.35s,border-color 0.35s;}
-.svc-col:hover{box-shadow:0 0 28px rgba(200,169,110,0.2);border-color:rgba(200,169,110,0.4);}
-.svc-col-title{font-family:'Playfair Display',serif;font-size:20px;letter-spacing:0.12em;color:var(--gold);text-align:center;text-transform:uppercase;font-weight:600;line-height:1.25;margin-bottom:10px;}
-.svc-col-line{width:28px;height:1.5px;background:var(--gold);margin:0 auto 28px;}
-.svc-item{background:var(--dark4);border-radius:8px;padding:20px 16px;margin-bottom:14px;border:0.5px solid transparent;transition:box-shadow 0.3s,border-color 0.3s,transform 0.25s;}
-.svc-item:last-child{margin-bottom:0;}
-.svc-item:hover{box-shadow:0 0 18px rgba(200,169,110,0.28);border-color:rgba(200,169,110,0.35);transform:translateY(-2px);}
-.svc-item-name{font-size:14px;font-weight:500;color:var(--text);text-align:center;margin-bottom:8px;}
-.svc-item-desc{font-size:12px;color:var(--muted);line-height:1.65;font-style:italic;text-align:center;}
+.svc-grid{display;grid-template-columns(3,1fr);gap:22px;}
+.svc-col{background(--dark3);border:0.5px solid rgba(200,169,110,0.18);border-radius:10px;padding:44px 28px 32px;transition 0.35s,border-color 0.35s;}
+.svc-col{box-shadow:0 0 28px rgba(200,169,110,0.2);border-color(200,169,110,0.4);}
+.svc-col-title{font-family:'Playfair Display',serif;font-size:20px;letter-spacing:0.12em;color(--gold);text-align;text-transform;font-weight:600;line-height:1.25;margin-bottom:10px;}
+.svc-col-line{width:28px;height:1.5px;background(--gold);margin:0 auto 28px;}
+.svc-item{background(--dark4);border-radius:8px;padding:20px 16px;margin-bottom:14px;border:0.5px solid transparent;transition 0.3s,border-color 0.3s,transform 0.25s;}
+.svc-item{margin-bottom:0;}
+.svc-item{box-shadow:0 0 18px rgba(200,169,110,0.28);border-color(200,169,110,0.35);transform(-2px);}
+.svc-item-name{font-size:14px;font-weight:500;color(--text);text-align;margin-bottom:8px;}
+.svc-item-desc{font-size:12px;color(--muted);line-height:1.65;font-style;text-align;}
 
 /* WHY */
-.why-wrap{background:var(--dark);padding:90px 50px;position:relative;overflow:hidden;}
-.why-blob{position:absolute;border-radius:50%;pointer-events:none;}
+.why-wrap{background(--dark);padding:90px 50px;position;overflow;}
+.why-blob{position;border-radius:50%;pointer-events;}
 .why-inner{max-width:1000px;margin:0 auto;}
-.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
-.why-card{background:var(--dark3);border:0.5px solid rgba(200,169,110,0.13);border-radius:10px;padding:34px 30px;text-align:center;transition:box-shadow 0.35s,border-color 0.35s,transform 0.25s;cursor:default;}
-.why-card:hover{box-shadow:0 0 26px rgba(200,169,110,0.3);border-color:rgba(200,169,110,0.45);transform:translateY(-3px);}
-.why-title{font-family:'Playfair Display',serif;font-size:15px;color:var(--gold);margin-bottom:12px;font-weight:500;}
-.why-desc{font-size:13px;color:var(--muted);line-height:1.7;}
+.why-grid{display;grid-template-columns(2,1fr);gap:18px;}
+.why-card{background(--dark3);border:0.5px solid rgba(200,169,110,0.13);border-radius:10px;padding:34px 30px;text-align;transition 0.35s,border-color 0.35s,transform 0.25s;cursor;}
+.why-card{box-shadow:0 0 26px rgba(200,169,110,0.3);border-color(200,169,110,0.45);transform(-3px);}
+.why-title{font-family:'Playfair Display',serif;font-size:15px;color(--gold);margin-bottom:12px;font-weight:500;}
+.why-desc{font-size:13px;color(--muted);line-height:1.7;}
 
 /* WORK */
-.work-wrap{background:var(--dark2);padding:90px 50px;}
+.work-wrap{background(--dark2);padding:90px 50px;}
 .work-inner{max-width:1180px;margin:0 auto;}
-.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-.work-card{border-radius:8px;overflow:hidden;aspect-ratio:16/10;position:relative;background:var(--dark3);cursor:pointer;border:0.5px solid transparent;transition:box-shadow 0.35s,border-color 0.35s,transform 0.25s;}
-.work-card:hover{box-shadow:0 0 26px rgba(200,169,110,0.32);border-color:rgba(200,169,110,0.4);transform:translateY(-3px);}
-.work-card-inner{width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center;}
-.work-yt-btn{width:52px;height:36px;background:rgba(220,20,20,0.92);border-radius:8px;display:flex;align-items:center;justify-content:center;}
+.work-grid{display;grid-template-columns(3,1fr);gap:14px;}
+.work-card{border-radius:8px;overflow;aspect-ratio:16/10;position;background(--dark3);cursor;border:0.5px solid transparent;transition 0.35s,border-color 0.35s,transform 0.25s;}
+.work-card{box-shadow:0 0 26px rgba(200,169,110,0.32);border-color(200,169,110,0.4);transform(-3px);}
+.work-card-inner{width:100%;height:100%;position;display;align-items;justify-content;}
+.work-yt-btn{width:52px;height:36px;background(220,20,20,0.92);border-radius:8px;display;align-items;justify-content;}
 .work-yt-arrow{width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:18px solid white;margin-left:3px;}
-.work-label{position:absolute;top:10px;left:12px;font-size:12px;color:white;font-weight:500;}
-.work-yt-logo{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;}
-.shorts-sec-title{font-family:'Inter',sans-serif;font-size:22px;font-weight:400;color:var(--text);text-align:center;margin:70px 0 28px;letter-spacing:0.02em;}
-.shorts-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
-.short-card{border-radius:8px;overflow:hidden;aspect-ratio:9/16;position:relative;background:var(--dark3);border:0.5px solid transparent;transition:box-shadow 0.35s,border-color 0.35s,transform 0.25s;cursor:pointer;}
-.short-card:hover{box-shadow:0 0 22px rgba(200,169,110,0.3);border-color:rgba(200,169,110,0.38);transform:translateY(-3px);}
-.short-inner{width:100%;height:100%;position:relative;}
-.short-progress{position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.15);}
-.short-ctrl{position:absolute;bottom:8px;left:8px;display:flex;align-items:center;gap:5px;}
-.btn-viewmore{display:block;margin:40px auto 0;background:rgba(200,169,110,0.82);border:1.5px solid var(--gold);color:#1a1208;padding:14px 44px;font-size:14px;font-family:'Playfair Display',serif;font-weight:500;cursor:pointer;border-radius:5px;letter-spacing:0.05em;width:fit-content;transition:all 0.3s;}
-.btn-viewmore:hover{background:var(--gold);box-shadow:0 0 22px rgba(200,169,110,0.38);}
+.work-label{position;top:10px;left:12px;font-size:12px;color;font-weight:500;}
+.work-yt-logo{position;bottom:8px;left:50%;transform(-50%);display;align-items;gap:4px;}
+.shorts-sec-title{font-family:'Inter',sans-serif;font-size:22px;font-weight:400;color(--text);text-align;margin:70px 0 28px;letter-spacing:0.02em;}
+.shorts-grid{display;grid-template-columns(5,1fr);gap:12px;}
+.short-card{border-radius:8px;overflow;aspect-ratio:9/16;position;background(--dark3);border:0.5px solid transparent;transition 0.35s,border-color 0.35s,transform 0.25s;cursor;}
+.short-card{box-shadow:0 0 22px rgba(200,169,110,0.3);border-color(200,169,110,0.38);transform(-3px);}
+.short-inner{width:100%;height:100%;position;}
+.short-progress{position;bottom:0;left:0;right:0;height:3px;background(255,255,255,0.15);}
+.short-ctrl{position;bottom:8px;left:8px;display;align-items;gap:5px;}
+.btn-viewmore{display;margin:40px auto 0;background(200,169,110,0.82);border:1.5px solid var(--gold);color:#1a1208;padding:14px 44px;font-size:14px;font-family:'Playfair Display',serif;font-weight:500;cursor;border-radius:5px;letter-spacing:0.05em;width;transition 0.3s;}
+.btn-viewmore{background(--gold);box-shadow:0 0 22px rgba(200,169,110,0.38);}
 
 /* TESTIMONIALS */
-.testi-wrap{background:var(--dark2);padding:90px 50px;}
+.testi-wrap{background(--dark2);padding:90px 50px;}
 .testi-inner{max-width:1280px;margin:0 auto;}
-.testi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-.testi-card{background:var(--dark3);border:0.5px solid rgba(200,169,110,0.1);border-radius:8px;padding:22px 18px;transition:box-shadow 0.35s,border-color 0.35s,transform 0.25s;cursor:default;}
-.testi-card:hover{box-shadow:0 0 22px rgba(200,169,110,0.28);border-color:rgba(200,169,110,0.4);transform:translateY(-2px);}
-.testi-name{font-family:'Playfair Display',serif;font-size:16px;color:var(--gold);text-align:center;margin-bottom:3px;}
-.testi-role{font-size:11px;color:var(--muted);text-align:center;margin-bottom:12px;font-weight:300;}
-.testi-line{width:20px;height:1px;background:var(--gold);margin:0 auto 12px;}
-.testi-text{font-size:11.5px;color:var(--muted);line-height:1.65;font-style:italic;text-align:center;}
+.testi-grid{display;grid-template-columns(4,1fr);gap:16px;}
+.testi-card{background(--dark3);border:0.5px solid rgba(200,169,110,0.1);border-radius:8px;padding:22px 18px;transition 0.35s,border-color 0.35s,transform 0.25s;cursor;}
+.testi-card{box-shadow:0 0 22px rgba(200,169,110,0.28);border-color(200,169,110,0.4);transform(-2px);}
+.testi-name{font-family:'Playfair Display',serif;font-size:16px;color(--gold);text-align;margin-bottom:3px;}
+.testi-role{font-size:11px;color(--muted);text-align;margin-bottom:12px;font-weight:300;}
+.testi-line{width:20px;height:1px;background(--gold);margin:0 auto 12px;}
+.testi-text{font-size:11.5px;color(--muted);line-height:1.65;font-style;text-align;}
 
 /* CONTACT */
-.contact-wrap{background:var(--dark);padding:90px 50px;}
+.contact-wrap{background(--dark);padding:90px 50px;}
 .contact-inner{max-width:1000px;margin:0 auto;}
-.connect-title{font-family:'Playfair Display',serif;font-size:42px;font-weight:500;color:var(--gold);text-align:center;margin-bottom:60px;}
-.contact-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:70px;align-items:start;}
-.contact-links-list{display:flex;flex-direction:column;gap:0;}
-.contact-link-item{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:0.5px solid rgba(255,255,255,0.07);cursor:pointer;text-decoration:none;transition:all 0.3s;}
-.contact-link-item:hover .link-icon-box{border-color:var(--gold);box-shadow:0 0 14px rgba(200,169,110,0.3);}
-.contact-link-item:hover .link-label{color:var(--gold);}
-.link-icon-box{width:52px;height:52px;border:1px solid rgba(200,169,110,0.35);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:border-color 0.3s,box-shadow 0.3s;}
-.link-icon-box svg{width:20px;height:20px;fill:var(--gold);}
-.link-label{font-size:15px;color:var(--text);font-weight:400;letter-spacing:0.01em;transition:color 0.3s;}
-.form-wrap{display:flex;flex-direction:column;gap:12px;}
-.finput{background:#1c1a16;border:0.5px solid rgba(200,169,110,0.22);border-radius:6px;padding:14px 16px;color:var(--text);font-size:13px;font-family:'Inter',sans-serif;outline:none;transition:border-color 0.3s,box-shadow 0.3s;}
-.finput:focus{border-color:rgba(200,169,110,0.5);box-shadow:0 0 12px rgba(200,169,110,0.15);}
-.finput::placeholder{color:var(--muted);}
-textarea.finput{min-height:130px;resize:vertical;}
-.btn-send{background:var(--gold);border:none;color:#111;padding:15px;font-size:13px;font-family:'Inter',sans-serif;font-weight:600;cursor:pointer;border-radius:6px;letter-spacing:0.06em;transition:all 0.3s;}
-.btn-send:hover{background:var(--gold2);box-shadow:0 0 20px rgba(200,169,110,0.4);}
+.connect-title{font-family:'Playfair Display',serif;font-size:42px;font-weight:500;color(--gold);text-align;margin-bottom:60px;}
+.contact-layout{display;grid-template-columns:1fr 1.6fr;gap:70px;align-items;}
+.contact-links-list{display;flex-direction;gap:0;}
+.contact-link-item{display;align-items;gap:16px;padding:16px 0;border-bottom:0.5px solid rgba(255,255,255,0.07);cursor;text-decoration;transition 0.3s;}
+.contact-link-item .link-icon-box{border-color(--gold);box-shadow:0 0 14px rgba(200,169,110,0.3);}
+.contact-link-item .link-label{color(--gold);}
+.link-icon-box{width:52px;height:52px;border:1px solid rgba(200,169,110,0.35);border-radius:4px;display;align-items;justify-content;flex-shrink:0;transition 0.3s,box-shadow 0.3s;}
+.link-icon-box svg{width:20px;height:20px;fill(--gold);}
+.link-label{font-size:15px;color(--text);font-weight:400;letter-spacing:0.01em;transition 0.3s;}
+.form-wrap{display;flex-direction;gap:12px;}
+.finput{background:#1c1a16;border:0.5px solid rgba(200,169,110,0.22);border-radius:6px;padding:14px 16px;color(--text);font-size:13px;font-family:'Inter',sans-serif;outline;transition 0.3s,box-shadow 0.3s;}
+.finput{border-color(200,169,110,0.5);box-shadow:0 0 12px rgba(200,169,110,0.15);}
+.finput::placeholder{color(--muted);}
+textarea.finput{min-height:130px;resize;}
+.btn-send{background(--gold);border;color:#111;padding:15px;font-size:13px;font-family:'Inter',sans-serif;font-weight:600;cursor;border-radius:6px;letter-spacing:0.06em;transition 0.3s;}
+.btn-send{background(--gold2);box-shadow:0 0 20px rgba(200,169,110,0.4);}
 
 /* ===================== ABOUT PAGE ===================== */
 .page-wrap{max-width:1100px;margin:0 auto;padding:120px 50px 90px;}
-.about-hero{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:center;margin-bottom:90px;}
-.photo-side{display:flex;flex-direction:column;align-items:center;gap:24px;}
-.photo-frame{width:300px;height:380px;border-radius:12px;border:1.5px solid rgba(200,169,110,0.3);overflow:hidden;position:relative;background:var(--dark3);box-shadow:0 12px 60px rgba(0,0,0,0.6);}
-.photo-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:linear-gradient(160deg,#2c1e0e 0%,#1a1208 50%,#0d0b08 100%);}
-.photo-icon{width:72px;height:72px;border-radius:50%;border:2px solid rgba(200,169,110,0.4);display:flex;align-items:center;justify-content:center;}
-.photo-icon svg{width:36px;height:36px;fill:rgba(200,169,110,0.6);}
-.photo-hint{font-size:11px;color:var(--muted);letter-spacing:0.08em;text-align:center;line-height:1.6;}
-.photo-badge{background:var(--dark4);border:1px solid rgba(200,169,110,0.25);border-radius:8px;padding:14px 20px;text-align:center;width:100%;}
-.badge-num{font-family:'Playfair Display',serif;font-size:32px;color:var(--gold);font-weight:600;line-height:1;}
-.badge-label{font-size:11px;color:var(--muted);margin-top:4px;letter-spacing:0.06em;text-transform:uppercase;}
-.bio-tag{display:inline-block;background:rgba(200,169,110,0.1);border:0.5px solid rgba(200,169,110,0.3);color:var(--gold);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:20px;}
-.bio-name{font-family:'Playfair Display',serif;font-size:48px;font-weight:500;color:var(--text);line-height:1.1;margin-bottom:8px;}
-.bio-role{font-size:15px;color:var(--gold);letter-spacing:0.06em;margin-bottom:28px;font-weight:400;}
-.bio-divider{width:48px;height:1.5px;background:var(--gold);margin-bottom:28px;}
-.bio-text{font-size:14.5px;color:var(--muted);line-height:1.85;margin-bottom:20px;}
-.bio-text strong{color:var(--text);font-weight:500;}
-.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px;}
-.stat-box{background:var(--dark3);border:0.5px solid rgba(200,169,110,0.15);border-radius:8px;padding:18px 16px;text-align:center;transition:border-color 0.3s,box-shadow 0.3s;}
-.stat-box:hover{border-color:rgba(200,169,110,0.4);box-shadow:0 0 18px rgba(200,169,110,0.18);}
-.stat-num{font-family:'Playfair Display',serif;font-size:28px;color:var(--gold);font-weight:600;}
-.stat-lbl{font-size:10.5px;color:var(--muted);margin-top:4px;letter-spacing:0.05em;text-transform:uppercase;line-height:1.4;}
-.btn-hire-about{display:inline-block;background:rgba(200,169,110,0.85);border:2px solid var(--gold);color:#1a1208;padding:14px 44px;font-size:15px;font-family:'Playfair Display',serif;font-weight:600;cursor:pointer;border-radius:6px;letter-spacing:0.05em;transition:all 0.3s;text-decoration:none;}
-.btn-hire-about:hover{background:var(--gold);box-shadow:0 0 28px rgba(200,169,110,0.45);}
+.about-hero{display;grid-template-columns:1fr 1.4fr;gap:80px;align-items;margin-bottom:90px;}
+.photo-side{display;flex-direction;align-items;gap:24px;}
+.photo-frame{width:300px;height:380px;border-radius:12px;border:1.5px solid rgba(200,169,110,0.3);overflow;position;background(--dark3);box-shadow:0 12px 60px rgba(0,0,0,0.6);}
+.photo-placeholder{width:100%;height:100%;display;flex-direction;align-items;justify-content;gap:14px;background(160deg,#2c1e0e 0%,#1a1208 50%,#0d0b08 100%);}
+.photo-icon{width:72px;height:72px;border-radius:50%;border:2px solid rgba(200,169,110,0.4);display;align-items;justify-content;}
+.photo-icon svg{width:36px;height:36px;fill(200,169,110,0.6);}
+.photo-hint{font-size:11px;color(--muted);letter-spacing:0.08em;text-align;line-height:1.6;}
+.photo-badge{background(--dark4);border:1px solid rgba(200,169,110,0.25);border-radius:8px;padding:14px 20px;text-align;width:100%;}
+.badge-num{font-family:'Playfair Display',serif;font-size:32px;color(--gold);font-weight:600;line-height:1;}
+.badge-label{font-size:11px;color(--muted);margin-top:4px;letter-spacing:0.06em;text-transform;}
+.bio-tag{display;background(200,169,110,0.1);border:0.5px solid rgba(200,169,110,0.3);color(--gold);font-size:11px;letter-spacing:0.12em;text-transform;padding:5px 14px;border-radius:20px;margin-bottom:20px;}
+.bio-name{font-family:'Playfair Display',serif;font-size:48px;font-weight:500;color(--text);line-height:1.1;margin-bottom:8px;}
+.bio-role{font-size:15px;color(--gold);letter-spacing:0.06em;margin-bottom:28px;font-weight:400;}
+.bio-divider{width:48px;height:1.5px;background(--gold);margin-bottom:28px;}
+.bio-text{font-size:14.5px;color(--muted);line-height:1.85;margin-bottom:20px;}
+.bio-text strong{color(--text);font-weight:500;}
+.stats-row{display;grid-template-columns(3,1fr);gap:14px;margin-bottom:32px;}
+.stat-box{background(--dark3);border:0.5px solid rgba(200,169,110,0.15);border-radius:8px;padding:18px 16px;text-align;transition 0.3s,box-shadow 0.3s;}
+.stat-box{border-color(200,169,110,0.4);box-shadow:0 0 18px rgba(200,169,110,0.18);}
+.stat-num{font-family:'Playfair Display',serif;font-size:28px;color(--gold);font-weight:600;}
+.stat-lbl{font-size:10.5px;color(--muted);margin-top:4px;letter-spacing:0.05em;text-transform;line-height:1.4;}
+.btn-hire-about{display;background(200,169,110,0.85);border:2px solid var(--gold);color:#1a1208;padding:14px 44px;font-size:15px;font-family:'Playfair Display',serif;font-weight:600;cursor;border-radius:6px;letter-spacing:0.05em;transition 0.3s;text-decoration;}
+.btn-hire-about{background(--gold);box-shadow:0 0 28px rgba(200,169,110,0.45);}
 .expertise-wrap{margin-bottom:90px;}
-.about-sec-title{font-family:'Playfair Display',serif;font-size:38px;font-weight:500;color:var(--gold);text-align:center;margin-bottom:14px;}
-.about-sec-line{width:55px;height:1.5px;background:var(--gold);margin:0 auto 52px;}
-.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.exp-card{background:var(--dark3);border:0.5px solid rgba(200,169,110,0.13);border-radius:10px;padding:36px 26px;text-align:center;transition:box-shadow 0.35s,border-color 0.35s,transform 0.25s;}
-.exp-card:hover{box-shadow:0 0 26px rgba(200,169,110,0.3);border-color:rgba(200,169,110,0.45);transform:translateY(-3px);}
-.exp-icon{width:54px;height:54px;margin:0 auto 16px;background:rgba(200,169,110,0.08);border:1px solid rgba(200,169,110,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center;}
-.exp-icon svg{width:26px;height:26px;fill:var(--gold);}
-.exp-title{font-family:'Playfair Display',serif;font-size:17px;color:var(--gold);margin-bottom:10px;font-weight:500;}
-.exp-desc{font-size:12.5px;color:var(--muted);line-height:1.7;}
+.about-sec-title{font-family:'Playfair Display',serif;font-size:38px;font-weight:500;color(--gold);text-align;margin-bottom:14px;}
+.about-sec-line{width:55px;height:1.5px;background(--gold);margin:0 auto 52px;}
+.exp-grid{display;grid-template-columns(3,1fr);gap:20px;}
+.exp-card{background(--dark3);border:0.5px solid rgba(200,169,110,0.13);border-radius:10px;padding:36px 26px;text-align;transition 0.35s,border-color 0.35s,transform 0.25s;}
+.exp-card{box-shadow:0 0 26px rgba(200,169,110,0.3);border-color(200,169,110,0.45);transform(-3px);}
+.exp-icon{width:54px;height:54px;margin:0 auto 16px;background(200,169,110,0.08);border:1px solid rgba(200,169,110,0.2);border-radius:12px;display;align-items;justify-content;}
+.exp-icon svg{width:26px;height:26px;fill(--gold);}
+.exp-title{font-family:'Playfair Display',serif;font-size:17px;color(--gold);margin-bottom:10px;font-weight:500;}
+.exp-desc{font-size:12.5px;color(--muted);line-height:1.7;}
 .brands-wrap{margin-bottom:90px;}
-.brand-intro{text-align:center;font-size:14px;color:var(--muted);max-width:600px;margin:0 auto 44px;line-height:1.8;}
-.brand-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
-.brand-card{background:var(--dark3);border:0.5px solid rgba(200,169,110,0.12);border-radius:8px;padding:24px 18px;text-align:center;transition:border-color 0.3s,box-shadow 0.3s;}
-.brand-card:hover{border-color:rgba(200,169,110,0.38);box-shadow:0 0 18px rgba(200,169,110,0.18);}
-.brand-name{font-size:13px;color:var(--text);font-weight:500;margin-bottom:4px;}
-.brand-type{font-size:11px;color:var(--muted);}
-.goal-wrap{background:var(--dark2);border:0.5px solid rgba(200,169,110,0.15);border-radius:14px;padding:60px 70px;text-align:center;margin-bottom:60px;}
-.goal-quote{font-family:'Playfair Display',serif;font-size:22px;color:var(--text);line-height:1.75;font-style:italic;margin-bottom:24px;max-width:700px;margin-left:auto;margin-right:auto;}
-.goal-quote span{color:var(--gold);}
-.goal-sign{font-size:13px;color:var(--muted);letter-spacing:0.04em;}
+.brand-intro{text-align;font-size:14px;color(--muted);max-width:600px;margin:0 auto 44px;line-height:1.8;}
+.brand-grid{display;grid-template-columns(4,1fr);gap:14px;}
+.brand-card{background(--dark3);border:0.5px solid rgba(200,169,110,0.12);border-radius:8px;padding:24px 18px;text-align;transition 0.3s,box-shadow 0.3s;}
+.brand-card{border-color(200,169,110,0.38);box-shadow:0 0 18px rgba(200,169,110,0.18);}
+.brand-name{font-size:13px;color(--text);font-weight:500;margin-bottom:4px;}
+.brand-type{font-size:11px;color(--muted);}
+.goal-wrap{background(--dark2);border:0.5px solid rgba(200,169,110,0.15);border-radius:14px;padding:60px 70px;text-align;margin-bottom:60px;}
+.goal-quote{font-family:'Playfair Display',serif;font-size:22px;color(--text);line-height:1.75;font-style;margin-bottom:24px;max-width:700px;margin-left;margin-right;}
+.goal-quote span{color(--gold);}
+.goal-sign{font-size:13px;color(--muted);letter-spacing:0.04em;}
 
 /* ===================== FAQ PAGE ===================== */
 .faq-page-wrap{max-width:820px;margin:0 auto;padding:120px 50px 90px;}
-.faq-sec-title{font-family:'Playfair Display',serif;font-size:42px;font-weight:500;color:var(--gold);text-align:center;margin-bottom:14px;}
-.faq-sec-line{width:55px;height:1.5px;background:var(--gold);margin:0 auto 16px;}
-.faq-sec-sub{text-align:center;font-size:14px;color:var(--muted);margin-bottom:60px;line-height:1.7;}
-.faq-category{font-family:'Playfair Display',serif;font-size:18px;color:var(--gold);margin-bottom:18px;margin-top:48px;padding-left:4px;letter-spacing:0.04em;}
-.faq-category:first-of-type{margin-top:0;}
-.faq-item{background:var(--dark3);border:0.5px solid rgba(200,169,110,0.12);border-radius:10px;margin-bottom:10px;overflow:hidden;transition:border-color 0.3s;}
-.faq-item.open{border-color:rgba(200,169,110,0.35);}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;transition:background 0.2s;}
-.faq-q:hover{background:rgba(200,169,110,0.04);}
-.faq-q-text{font-size:14.5px;color:var(--text);font-weight:400;line-height:1.5;padding-right:20px;}
-.faq-arrow{width:22px;height:22px;border:1px solid rgba(200,169,110,0.35);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform 0.3s,background 0.3s;}
-.faq-arrow svg{width:10px;height:10px;fill:var(--gold);transition:transform 0.3s;}
-.faq-item.open .faq-arrow{background:rgba(200,169,110,0.12);}
-.faq-item.open .faq-arrow svg{transform:rotate(180deg);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s;}
-.faq-a-inner{padding:0 24px 22px;font-size:13.5px;color:var(--muted);line-height:1.85;}
-.faq-a-inner strong{color:var(--text);font-weight:500;}
+.faq-sec-title{font-family:'Playfair Display',serif;font-size:42px;font-weight:500;color(--gold);text-align;margin-bottom:14px;}
+.faq-sec-line{width:55px;height:1.5px;background(--gold);margin:0 auto 16px;}
+.faq-sec-sub{text-align;font-size:14px;color(--muted);margin-bottom:60px;line-height:1.7;}
+.faq-category{font-family:'Playfair Display',serif;font-size:18px;color(--gold);margin-bottom:18px;margin-top:48px;padding-left:4px;letter-spacing:0.04em;}
+.faq-category{margin-top:0;}
+.faq-item{background(--dark3);border:0.5px solid rgba(200,169,110,0.12);border-radius:10px;margin-bottom:10px;overflow;transition 0.3s;}
+.faq-item.open{border-color(200,169,110,0.35);}
+.faq-q{display;align-items;justify-content;padding:20px 24px;cursor;transition 0.2s;}
+.faq-q{background(200,169,110,0.04);}
+.faq-q-text{font-size:14.5px;color(--text);font-weight:400;line-height:1.5;padding-right:20px;}
+.faq-arrow{width:22px;height:22px;border:1px solid rgba(200,169,110,0.35);border-radius:50%;display;align-items;justify-content;flex-shrink:0;transition 0.3s,background 0.3s;}
+.faq-arrow svg{width:10px;height:10px;fill(--gold);transition 0.3s;}
+.faq-item.open .faq-arrow{background(200,169,110,0.12);}
+.faq-item.open .faq-arrow svg{transform(180deg);}
+.faq-a{max-height:0;overflow;transition 0.4s ease,padding 0.3s;}
+.faq-a-inner{padding:0 24px 22px;font-size:13.5px;color(--muted);line-height:1.85;}
+.faq-a-inner strong{color(--text);font-weight:500;}
 .faq-item.open .faq-a{max-height:400px;}
-.faq-cta-wrap{margin-top:70px;background:var(--dark2);border:0.5px solid rgba(200,169,110,0.2);border-radius:14px;padding:50px;text-align:center;}
-.faq-cta-title{font-family:'Playfair Display',serif;font-size:28px;color:var(--gold);margin-bottom:12px;}
-.faq-cta-sub{font-size:13.5px;color:var(--muted);margin-bottom:28px;line-height:1.7;}
-.btn-hire-faq{display:inline-block;background:rgba(200,169,110,0.85);border:2px solid var(--gold);color:#1a1208;padding:14px 44px;font-size:15px;font-family:'Playfair Display',serif;font-weight:600;cursor:pointer;border-radius:6px;letter-spacing:0.05em;transition:all 0.3s;text-decoration:none;}
-.btn-hire-faq:hover{background:var(--gold);box-shadow:0 0 28px rgba(200,169,110,0.45);}
+.faq-cta-wrap{margin-top:70px;background(--dark2);border:0.5px solid rgba(200,169,110,0.2);border-radius:14px;padding:50px;text-align;}
+.faq-cta-title{font-family:'Playfair Display',serif;font-size:28px;color(--gold);margin-bottom:12px;}
+.faq-cta-sub{font-size:13.5px;color(--muted);margin-bottom:28px;line-height:1.7;}
+.btn-hire-faq{display;background(200,169,110,0.85);border:2px solid var(--gold);color:#1a1208;padding:14px 44px;font-size:15px;font-family:'Playfair Display',serif;font-weight:600;cursor;border-radius:6px;letter-spacing:0.05em;transition 0.3s;text-decoration;}
+.btn-hire-faq{background(--gold);box-shadow:0 0 28px rgba(200,169,110,0.45);}
 
 /* ===================== PORTFOLIO PAGE ===================== */
 .port-page-wrap{max-width:1280px;margin:0 auto;padding:110px 50px 90px;}
-.port-sec-title{font-family:'Playfair Display',serif;font-size:42px;font-weight:500;color:var(--gold);text-align:center;margin-bottom:14px;}
-.port-sec-line{width:55px;height:1.5px;background:var(--gold);margin:0 auto 14px;}
-.port-sec-sub{text-align:center;font-size:14px;color:var(--muted);margin-bottom:60px;}
-.h-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
-.h-card{border-radius:10px;overflow:hidden;aspect-ratio:16/9;position:relative;background:var(--dark3);cursor:pointer;border:0.5px solid transparent;transition:box-shadow 0.35s,border-color 0.35s,transform 0.25s;}
-.h-card:hover{box-shadow:0 0 26px rgba(200,169,110,0.32);border-color:rgba(200,169,110,0.4);transform:translateY(-3px);}
-.card-bg{position:absolute;inset:0;}
-.card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.75) 0%,transparent 55%);}
-.card-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-55%);width:44px;height:44px;background:rgba(220,20,20,0.88);border-radius:8px;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.25s,transform 0.25s;}
+.port-sec-title{font-family:'Playfair Display',serif;font-size:42px;font-weight:500;color(--gold);text-align;margin-bottom:14px;}
+.port-sec-line{width:55px;height:1.5px;background(--gold);margin:0 auto 14px;}
+.port-sec-sub{text-align;font-size:14px;color(--muted);margin-bottom:60px;}
+.h-grid{display;grid-template-columns(4,1fr);gap:14px;}
+.h-card{border-radius:10px;overflow;aspect-ratio:16/9;position;background(--dark3);cursor;border:0.5px solid transparent;transition 0.35s,border-color 0.35s,transform 0.25s;}
+.h-card{box-shadow:0 0 26px rgba(200,169,110,0.32);border-color(200,169,110,0.4);transform(-3px);}
+.card-bg{position;inset:0;}
+.card-overlay{position;inset:0;background(to top,rgba(0,0,0,0.75) 0%,transparent 55%);}
+.card-play{position;top:50%;left:50%;transform(-50%,-55%);width:44px;height:44px;background(220,20,20,0.88);border-radius:8px;display;align-items;justify-content;opacity:0;transition 0.25s,transform 0.25s;}
 .card-play-arrow{width:0;height:0;border-top:9px solid transparent;border-bottom:9px solid transparent;border-left:16px solid white;margin-left:3px;}
-.h-card:hover .card-play{opacity:1;transform:translate(-50%,-50%);}
-.card-label{position:absolute;bottom:10px;left:12px;right:12px;}
-.card-label-text{font-size:11.5px;color:rgba(255,255,255,0.9);font-weight:500;line-height:1.4;}
-.card-label-tag{display:inline-block;background:rgba(200,169,110,0.2);border:0.5px solid rgba(200,169,110,0.4);color:var(--gold);font-size:9.5px;padding:2px 8px;border-radius:10px;margin-top:4px;letter-spacing:0.06em;}
-.card-num{position:absolute;top:10px;right:10px;background:rgba(0,0,0,0.55);color:rgba(255,255,255,0.5);font-size:10px;padding:2px 8px;border-radius:10px;}
-.v-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
-.v-card{border-radius:10px;overflow:hidden;aspect-ratio:9/16;position:relative;background:var(--dark3);cursor:pointer;border:0.5px solid transparent;transition:box-shadow 0.35s,border-color 0.35s,transform 0.25s;}
-.v-card:hover{box-shadow:0 0 22px rgba(200,169,110,0.3);border-color:rgba(200,169,110,0.38);transform:translateY(-3px);}
-.v-card:hover .card-play{opacity:1;transform:translate(-50%,-50%);}
+.h-card .card-play{opacity:1;transform(-50%,-50%);}
+.card-label{position;bottom:10px;left:12px;right:12px;}
+.card-label-text{font-size:11.5px;color(255,255,255,0.9);font-weight:500;line-height:1.4;}
+.card-label-tag{display;background(200,169,110,0.2);border:0.5px solid rgba(200,169,110,0.4);color(--gold);font-size:9.5px;padding:2px 8px;border-radius:10px;margin-top:4px;letter-spacing:0.06em;}
+.card-num{position;top:10px;right:10px;background(0,0,0,0.55);color(255,255,255,0.5);font-size:10px;padding:2px 8px;border-radius:10px;}
+.v-grid{display;grid-template-columns(5,1fr);gap:12px;}
+.v-card{border-radius:10px;overflow;aspect-ratio:9/16;position;background(--dark3);cursor;border:0.5px solid transparent;transition 0.35s,border-color 0.35s,transform 0.25s;}
+.v-card{box-shadow:0 0 22px rgba(200,169,110,0.3);border-color(200,169,110,0.38);transform(-3px);}
+.v-card .card-play{opacity:1;transform(-50%,-50%);}
 .port-section-divider{margin-bottom:60px;}
-.port-section-label{font-family:'Playfair Display',serif;font-size:22px;color:var(--text);margin-bottom:24px;display:flex;align-items:center;gap:14px;}
-.port-section-label::after{content:'';flex:1;height:0.5px;background:rgba(200,169,110,0.15);}
-.port-section-count{font-size:13px;color:var(--muted);font-family:'Inter',sans-serif;font-weight:300;}
-.port-cta-bottom{text-align:center;margin-top:70px;padding:50px;background:var(--dark2);border:0.5px solid rgba(200,169,110,0.15);border-radius:14px;}
-.port-cta-title{font-family:'Playfair Display',serif;font-size:26px;color:var(--gold);margin-bottom:10px;}
-.port-cta-sub{font-size:13.5px;color:var(--muted);margin-bottom:26px;}
-.btn-hire-p{display:inline-block;background:rgba(200,169,110,0.85);border:2px solid var(--gold);color:#1a1208;padding:14px 44px;font-size:15px;font-family:'Playfair Display',serif;font-weight:600;cursor:pointer;border-radius:6px;letter-spacing:0.05em;transition:all 0.3s;text-decoration:none;}
-.btn-hire-p:hover{background:var(--gold);box-shadow:0 0 28px rgba(200,169,110,0.45);}
-</style>
-</head>
-<body>
+.port-section-label{font-family:'Playfair Display',serif;font-size:22px;color(--text);margin-bottom:24px;display;align-items;gap:14px;}
+.port-section-label::after{content:'';flex:1;height:0.5px;background(200,169,110,0.15);}
+.port-section-count{font-size:13px;color(--muted);font-family:'Inter',sans-serif;font-weight:300;}
+.port-cta-bottom{text-align;margin-top:70px;padding:50px;background(--dark2);border:0.5px solid rgba(200,169,110,0.15);border-radius:14px;}
+.port-cta-title{font-family:'Playfair Display',serif;font-size:26px;color(--gold);margin-bottom:10px;}
+.port-cta-sub{font-size:13.5px;color(--muted);margin-bottom:26px;}
+.btn-hire-p{display;background(200,169,110,0.85);border:2px solid var(--gold);color:#1a1208;padding:14px 44px;font-size:15px;font-family:'Playfair Display',serif;font-weight:600;cursor;border-radius:6px;letter-spacing:0.05em;transition 0.3s;text-decoration;}
+.btn-hire-p{background(--gold);box-shadow:0 0 28px rgba(200,169,110,0.45);}
 
-<!-- ===================== NAV ===================== -->
-<nav>
-  <div class="nav-left" onclick="showPage('home')">
-    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"><polygon points="9,7 9,27 27,17" fill="white"/></svg>
+
+<!-- EXPERTISE -->
+<div class="expertise-wrap">
+  <h2 class="about-sec-title">What I Do Best</h2>
+  <div class="about-sec-line"></div>
+  <div class="exp-grid">
+    <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg></div><div class="exp-title">Video Editing</div><div class="exp-desc">Precision editing with smooth pacing, dynamic cuts, motion graphics, and storytelling that keeps viewers hooked from start to finish.</div></div>
+    <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg></div><div class="exp-title">Cinematography</div><div class="exp-desc">7+ years behind the lens — capturing brand stories, product videos, and creator content with a cinematic eye and professional equipment.</div></div>
+    <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm-1-11v6l5 3-.75 1.23L10 15V8h1z"/></svg></div><div class="exp-title">Color Grading</div><div class="exp-desc">Professional color grading that transforms raw footage into a visual identity — mood, tone, and cinematic look tailored for your brand.</div></div>
+    <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div><div class="exp-title">YouTube Content</div><div class="exp-desc">Full YouTube video production — editing, thumbnails, and retention-optimized pacing that helps channels grow their views and subscribers.</div></div>
+    <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div><div class="exp-title">Brand Films</div><div class="exp-desc">Storytelling that builds trust — brand films and ad creatives that communicate your value and convert viewers into customers.</div></div>
+    <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg></div><div class="exp-title">Reels & Shorts</div><div class="exp-desc">Vertical video editing for Instagram Reels and YouTube Shorts — fast-paced, engaging, and optimized for maximum reach.</div></div>
   </div>
-  <ul class="nav-links">
-    <li><a onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
-    <li><a onclick="showPage('home','work')" id="nav-work">Work</a></li>
-    <li><a onclick="showPage('about')" id="nav-about">About Us</a></li>
-    <li><a onclick="showPage('faq')" id="nav-faq">FAQ</a></li>
-  </ul>
-  <a onclick="showPage('home','contact')" class="btn-nav" style="cursor:pointer;">Hire Me</a>
-</nav>
-
-<!-- ===================== HOME PAGE ===================== -->
-<div id="page-home" class="page active">
-  <div id="home" style="padding-top:80px;background:var(--dark);">
-    <div class="hero-inner">
-      <div class="yt-frame-wrap">
-        <div class="yt-browser-bar">
-          <div class="yt-dot" style="background:#ff5f57;"></div>
-          <div class="yt-dot" style="background:#febc2e;"></div>
-          <div class="yt-dot" style="background:#28c840;"></div>
-          <div class="yt-search"><span>Search</span></div>
-          <div style="width:22px;height:22px;border-radius:50%;background:#ddd;margin-left:8px;"></div>
-        </div>
-        <div class="yt-video-area">
-          <div class="yt-video-bg"></div>
-          <div style="position:absolute;inset:0;background:linear-gradient(160deg,#2c1e0e 0%,#1a1208 35%,#0d0b08 70%,#080604 100%);"></div>
-          <div class="yt-controls">
-            <div class="yt-title-bar">Made with Photoshop Generative Fill AI | New Future for Videos? (Hindi)</div>
-            <div class="yt-row">
-              <div class="yt-avatar"></div>
-              <span class="yt-chan">TheMraadul · 84K subscribers</span>
-              <span style="background:transparent;border:1px solid #555;color:#fff;border-radius:14px;padding:2px 9px;font-size:10px;">Join</span>
-              <span class="yt-badge" style="background:#3ea6ff;color:#000;">Analytics</span>
-              <span class="yt-badge" style="background:#2ba640;color:#fff;">Edit video</span>
-              <span class="yt-badge" style="background:#3ea6ff;color:#000;">⟳ Remix ▼</span>
-              <span style="margin-left:auto;display:flex;gap:10px;">
-                <span style="font-size:10px;color:#ccc;">👍 2K</span>
-                <span style="font-size:10px;color:#ccc;">👎</span>
-                <span style="font-size:10px;color:#ccc;">↗ Share</span>
-                <span style="font-size:10px;color:#ccc;">📢 Promote</span>
-                <span style="font-size:10px;color:#ccc;">⬇ Download</span>
-                <span style="font-size:10px;color:#ccc;">···</span>
-              </span>
-            </div>
-            <div class="yt-progressbar"><div class="yt-progress-fill"></div></div>
-            <div class="yt-bottom">
-              <span class="yt-playtime">0:01 / 1:11</span>
-              <div style="display:flex;gap:8px;font-size:12px;color:rgba(255,255,255,0.5);">
-                <span>🔇</span><span>⛶</span><span>⋮</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="btn-hire" onclick="showPage('home','contact')">Hire Me</button>
-    </div>
-  </div>
-
-  <!-- SERVICES -->
-  <div class="services-wrap">
-    <div class="services-inner">
-      <h2 class="sec-title">Our Services</h2>
-      <div class="sec-line"></div>
-      <div class="svc-grid">
-        <div class="svc-col">
-          <div class="svc-col-title">Content<br>Creation</div>
-          <div class="svc-col-line"></div>
-          <div class="svc-item">
-            <div class="svc-item-name">Video Editing</div>
-            <div class="svc-item-desc">"Your videos will stand out with smooth, engaging edits—no more spending hours trying to perfect them yourself."</div>
-          </div>
-          <div class="svc-item">
-            <div class="svc-item-name">Video Shooting</div>
-            <div class="svc-item-desc">"Get stunning, high-quality visuals without the headache of managing equipment or a crew."</div>
-          </div>
-          <div class="svc-item">
-            <div class="svc-item-name">Graphic Designing</div>
-            <div class="svc-item-desc">"Stand out from the crowd with eye-catching YouTube thumbnails and visuals that boost clicks."</div>
-          </div>
-        </div>
-        <div class="svc-col">
-          <div class="svc-col-title">Content<br>Strategy</div>
-          <div class="svc-col-line"></div>
-          <div class="svc-item">
-            <div class="svc-item-name">Content Planning</div>
-            <div class="svc-item-desc">"Stay ahead with a clear, actionable plan that takes the guesswork out of what to create next."</div>
-          </div>
-          <div class="svc-item">
-            <div class="svc-item-name">Content Management</div>
-            <div class="svc-item-desc">"Your content will always be organized, on time, and stress-free—no more juggling platforms or schedules."</div>
-          </div>
-          <div class="svc-item">
-            <div class="svc-item-name">Scriptwriting</div>
-            <div class="svc-item-desc">"Enjoy ready-to-go scripts that grab attention and save you time brainstorming ideas."</div>
-          </div>
-        </div>
-        <div class="svc-col">
-          <div class="svc-col-title">Marketing &amp;<br>Distribution</div>
-          <div class="svc-col-line"></div>
-          <div class="svc-item">
-            <div class="svc-item-name">Content Distribution</div>
-            <div class="svc-item-desc">"Your content will reach the right audience at the right time, saving you the hassle of figuring out where and how to post."</div>
-          </div>
-          <div class="svc-item">
-            <div class="svc-item-name">Social Media Growth</div>
-            <div class="svc-item-desc">"Watch your social media grow while you focus on running your business—we handle the heavy lifting."</div>
-          </div>
-          <div class="svc-item">
-            <div class="svc-item-name">Audience Conversion</div>
-            <div class="svc-item-desc">"Turn followers into loyal customers with content that drives results, without wasting time on trial-and-error."</div>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:50px;">
-        <button class="btn-book" onclick="showPage('home','contact')">Book a Call</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- WHY CHOOSE -->
-  <div class="why-wrap">
-    <div class="why-blob" style="width:350px;height:280px;background:radial-gradient(circle,rgba(200,169,110,0.055) 0%,transparent 70%);top:40%;left:5%;"></div>
-    <div class="why-blob" style="width:280px;height:220px;background:radial-gradient(circle,rgba(200,169,110,0.04) 0%,transparent 70%);top:20%;right:8%;"></div>
-    <div class="why-inner">
-      <h2 class="sec-title">Why Choose Rj Films Production?</h2>
-      <div class="sec-line"></div>
-      <div class="why-grid">
-        <div class="why-card glow-hover"><div class="why-title">Monetize Your Audience</div><div class="why-desc">Turn your followers into paying customers and grow your revenue.</div></div>
-        <div class="why-card glow-hover"><div class="why-title">Efficient Management</div><div class="why-desc">Grow your business while we handle everything - from planning to posting.</div></div>
-        <div class="why-card glow-hover"><div class="why-title">Stand Out Instantly</div><div class="why-desc">Get high-quality videos, eye-catching thumbnails and engaging scripts that grab attention.</div></div>
-        <div class="why-card glow-hover"><div class="why-title">Quick and Reliable</div><div class="why-desc">Enjoy fast turnarounds and smooth revisions, so your content is always on point.</div></div>
-        <div class="why-card glow-hover"><div class="why-title">Work With Experts</div><div class="why-desc">Your content is in the hands of a specialist with 7+ years of experience in the craft.</div></div>
-        <div class="why-card glow-hover"><div class="why-title">Customised Services</div><div class="why-desc">Content solutions tailored to your goals, designed to match your vision and deliver results.</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- OUR WORK -->
-  <div class="work-wrap" id="work">
-    <div class="work-inner">
-      <h2 class="sec-title">Our Work</h2>
-      <div class="sec-line"></div>
-      <div class="work-grid">
-        <div class="work-card"><div class="work-card-inner" style="background:linear-gradient(135deg,#1a1005 0%,#0d0d0d 100%);"><div class="work-label">Conversion Oriented Edit</div><div class="work-yt-btn"><div class="work-yt-arrow"></div></div><div class="work-yt-logo"><span style="font-size:10px;color:rgba(255,255,255,0.5);">Watch on</span><span style="font-size:10px;color:red;font-weight:700;margin-left:3px;">▶ YouTube</span></div></div></div>
-        <div class="work-card"><div class="work-card-inner" style="background:linear-gradient(135deg,#12100a 0%,#0d0d0d 100%);"><div class="work-label">Retention Ad Edit</div><div class="work-yt-btn"><div class="work-yt-arrow"></div></div><div class="work-yt-logo"><span style="font-size:10px;color:rgba(255,255,255,0.5);">Watch on</span><span style="font-size:10px;color:red;font-weight:700;margin-left:3px;">▶ YouTube</span></div></div></div>
-        <div class="work-card"><div class="work-card-inner" style="background:linear-gradient(135deg,#0e0e0e 0%,#181510 100%);"><div class="work-label">Vlog Style Storytelling Edit</div><div class="work-yt-btn"><div class="work-yt-arrow"></div></div><div class="work-yt-logo"><span style="font-size:10px;color:rgba(255,255,255,0.5);">Watch on</span><span style="font-size:10px;color:red;font-weight:700;margin-left:3px;">▶ YouTube</span></div></div></div>
-        <div class="work-card"><div class="work-card-inner" style="background:#0a0a0a;"><div class="work-label">Book Summary Edit</div><div class="work-yt-btn"><div class="work-yt-arrow"></div></div><div class="work-yt-logo"><span style="font-size:10px;color:rgba(255,255,255,0.5);">Watch on</span><span style="font-size:10px;color:red;font-weight:700;margin-left:3px;">▶ YouTube</span></div></div></div>
-        <div class="work-card"><div class="work-card-inner" style="background:linear-gradient(135deg,#0a0a1a 0%,#0d0d0d 100%);"><div class="work-label">Cinematic + Animation</div><div class="work-yt-btn"><div class="work-yt-arrow"></div></div><div class="work-yt-logo"><span style="font-size:10px;color:rgba(255,255,255,0.5);">Watch on</span><span style="font-size:10px;color:red;font-weight:700;margin-left:3px;">▶ YouTube</span></div></div></div>
-        <div class="work-card"><div class="work-card-inner" style="background:linear-gradient(135deg,#1a0e0e 0%,#0d0d0d 100%);"><div class="work-label">Brand Film</div><div class="work-yt-btn"><div class="work-yt-arrow"></div></div><div class="work-yt-logo"><span style="font-size:10px;color:rgba(255,255,255,0.5);">Watch on</span><span style="font-size:10px;color:red;font-weight:700;margin-left:3px;">▶ YouTube</span></div></div></div>
-      </div>
-      <div class="shorts-sec-title">Our Shorts</div>
-      <div class="shorts-grid">
-        <div class="short-card"><div class="short-inner" style="background:linear-gradient(180deg,#1a1005 0%,#0a0a0a 100%);"></div><div class="short-progress"></div><div class="short-ctrl"><span style="font-size:10px;color:rgba(255,255,255,0.65);">▶</span><span style="font-size:10px;color:rgba(255,255,255,0.5);">🔇</span></div></div>
-        <div class="short-card"><div class="short-inner" style="background:linear-gradient(180deg,#0e0c08 0%,#0a0a0a 100%);"><div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:11px;color:rgba(255,255,255,0.45);font-weight:600;letter-spacing:0.1em;text-align:center;">2022<br>REWIND</div></div><div class="short-progress"></div><div class="short-ctrl"><span style="font-size:10px;color:rgba(255,255,255,0.65);">▶</span></div></div>
-        <div class="short-card"><div class="short-inner" style="background:#000;"></div><div class="short-progress"></div><div class="short-ctrl"><span style="font-size:10px;color:rgba(255,255,255,0.65);">▶</span></div></div>
-        <div class="short-card"><div class="short-inner" style="background:linear-gradient(180deg,#0d1a0d 0%,#0a0a0a 100%);"><div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;"><div style="font-size:8px;color:rgba(255,255,255,0.35);letter-spacing:0.1em;margin-bottom:2px;">WELCOME TO</div><div style="font-size:11px;font-weight:700;color:#4fc3f7;">URBAN</div><div style="font-size:11px;font-weight:700;color:#ffd600;">NOMADS</div></div></div><div class="short-progress"></div><div class="short-ctrl"><span style="font-size:10px;color:rgba(255,255,255,0.65);">▶</span></div></div>
-        <div class="short-card"><div class="short-inner" style="background:linear-gradient(180deg,#1a1205 0%,#0a0a0a 100%);"></div><div class="short-progress"></div><div class="short-ctrl"><span style="font-size:10px;color:rgba(255,255,255,0.65);">▶</span></div></div>
-      </div>
-      <button class="btn-viewmore" onclick="showPage('portfolio')">View More</button>
-    </div>
-  </div>
-
-  <!-- TESTIMONIALS -->
-  <div class="testi-wrap">
-    <div class="testi-inner">
-      <h2 class="sec-title">What Our Clients Say</h2>
-      <div class="sec-line"></div>
-      <div class="testi-grid">
-        <div class="testi-card"><div class="testi-name">Vir</div><div class="testi-role">Founder of Leap Media</div><div class="testi-line"></div><div class="testi-text">"Rajat and team is amazing to work with! He gets the job done on time, understands exactly what you need in the first go, and keeps things super smooth with no back-and-forth hassle. Plus, he's super helpful and always goes the extra mile!"</div></div>
-        <div class="testi-card"><div class="testi-name">Ritchie</div><div class="testi-role">Founder of Kresco</div><div class="testi-line"></div><div class="testi-text">"Rj Films did an amazing job editing our video and creating something truly beautiful. They're super friendly, talented, and a pleasure to work with. Highly recommend!"</div></div>
-        <div class="testi-card"><div class="testi-name">Abhishek</div><div class="testi-role">Founder of JustPrem Sangha</div><div class="testi-line"></div><div class="testi-text">"Working with Rj Films Production has been amazing! Their young, passionate team helped me with several projects, and I'm so grateful for their support in helping me grow my own company too."</div></div>
-        <div class="testi-card"><div class="testi-name">Harry Ranveer</div><div class="testi-role">Founder of Videopreneur</div><div class="testi-line"></div><div class="testi-text">"Rajat has been an exceptional teammate, treating our work like his own. His adaptability, reliability, and dedication have exceeded all expectations. If you're looking for someone who consistently delivers, His team is the one."</div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="contact-wrap" id="contact">
-    <div class="contact-inner">
-      <h2 class="connect-title">Connect with Me</h2>
-      <div class="contact-layout">
-        <div class="contact-links-list">
-          <a href="mailto:rajat@rjfilmsproduction.com" class="contact-link-item">
-            <div class="link-icon-box"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
-            <span class="link-label">rajat@rjfilmsproduction.com</span>
-          </a>
-          <a href="https://instagram.com/rjfilmsproduction" target="_blank" class="contact-link-item">
-            <div class="link-icon-box"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
-            <span class="link-label">@rjfilmsproduction</span>
-          </a>
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="contact-link-item">
-            <div class="link-icon-box"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
-            <span class="link-label">WhatsApp · 10am – 8pm IST</span>
-          </a>
-          <a href="https://fiverr.com/rjfilmsproduction" target="_blank" class="contact-link-item">
-            <div class="link-icon-box"><svg viewBox="0 0 24 24"><path d="M23.004 15.588a.995.995 0 10-1.99 0 .995.995 0 001.99 0zm-4.99-.567a3.136 3.136 0 00-.38-1.565c-.24-.43-.603-.79-1.04-1.024a3.136 3.136 0 00-1.433-.337c-.524 0-1.016.11-1.434.337a3.136 3.136 0 00-1.04 1.024 3.136 3.136 0 00-.38 1.565c0 .547.128 1.072.38 1.565.24.43.604.79 1.04 1.024.417.226.91.337 1.434.337.523 0 1.016-.11 1.434-.337a3.136 3.136 0 001.04-1.024c.252-.493.38-1.018.38-1.565zm-9.08-7.07c0-.547-.454-1.001-1.001-1.001s-1.001.454-1.001 1.001.454 1.001 1.001 1.001 1.001-.454 1.001-1.001zM23 19H1V5h22v14z"/></svg></div>
-            <span class="link-label">Hire on Fiverr</span>
-          </a>
-          <a href="https://youtube.com/@rjfilmsproduction" target="_blank" class="contact-link-item">
-            <div class="link-icon-box"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></div>
-            <span class="link-label">YouTube Channel</span>
-          </a>
-          <a href="https://linkedin.com/in/rjfilmsproduction" target="_blank" class="contact-link-item">
-            <div class="link-icon-box"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
-            <span class="link-label">LinkedIn</span>
-          </a>
-        </div>
-        <div class="form-wrap">
-          <input class="finput" type="text" placeholder="Your Name">
-          <input class="finput" type="email" placeholder="Your Email">
-          <textarea class="finput" placeholder="Your Message"></textarea>
-          <button class="btn-send">Send Message</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2024 Rj Films Production. All rights reserved.</p>
-    <span>Designed and Developed by Rj Films Production Studio</span>
-  </footer>
 </div>
 
-<!-- ===================== ABOUT PAGE ===================== -->
-<div id="page-about" class="page">
-  <div class="page-wrap">
-    <div class="about-hero">
-      <div class="photo-side">
-        <div class="photo-frame">
-          <div class="photo-placeholder">
-            <div class="photo-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
-            </div>
-            <div class="photo-hint">Add Your Photo Here<br><span style="font-size:10px;opacity:0.6;">Replace with your image</span></div>
-          </div>
-        </div>
-        <div class="photo-badge">
-          <div class="badge-num">7+</div>
-          <div class="badge-label">Years of Experience</div>
-        </div>
-      </div>
-      <div class="bio-side">
-        <div class="bio-tag">Video Editor · Cinematographer · Colorist</div>
-        <div class="bio-name">Rajat</div>
-        <div class="bio-role">Founder, Rj Films Production</div>
-        <div class="bio-divider"></div>
-        <p class="bio-text">With <strong>7+ years of hands-on experience</strong> in video production, I specialize in crafting cinematic stories that don't just look good — they <strong>drive real results</strong> for brands, creators, and businesses.</p>
-        <p class="bio-text">From <strong>high-retention edits</strong> and <strong>brand films</strong> to <strong>color grading</strong> that sets the mood — I bring a complete filmmaking vision to every project. I've worked with <strong>YouTubers, startup founders, and business owners</strong> across India who needed video content that actually converts.</p>
-        <p class="bio-text">My goal is simple: <strong>you focus on growing your brand</strong>, I handle every frame of the story.</p>
-        <div class="stats-row">
-          <div class="stat-box"><div class="stat-num">7+</div><div class="stat-lbl">Years Experience</div></div>
-          <div class="stat-box"><div class="stat-num">100+</div><div class="stat-lbl">Projects Delivered</div></div>
-          <div class="stat-box"><div class="stat-num">50+</div><div class="stat-lbl">Happy Clients</div></div>
-        </div>
-        <a class="btn-hire-about" onclick="showPage('home','contact')" style="cursor:pointer;">Hire Me</a>
-      </div>
-    </div>
-
-    <!-- EXPERTISE -->
-    <div class="expertise-wrap">
-      <h2 class="about-sec-title">What I Do Best</h2>
-      <div class="about-sec-line"></div>
-      <div class="exp-grid">
-        <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg></div><div class="exp-title">Video Editing</div><div class="exp-desc">Precision editing with smooth pacing, dynamic cuts, motion graphics, and storytelling that keeps viewers hooked from start to finish.</div></div>
-        <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg></div><div class="exp-title">Cinematography</div><div class="exp-desc">7+ years behind the lens — capturing brand stories, product videos, and creator content with a cinematic eye and professional equipment.</div></div>
-        <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm-1-11v6l5 3-.75 1.23L10 15V8h1z"/></svg></div><div class="exp-title">Color Grading</div><div class="exp-desc">Professional color grading that transforms raw footage into a visual identity — mood, tone, and cinematic look tailored for your brand.</div></div>
-        <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div><div class="exp-title">YouTube Content</div><div class="exp-desc">Full YouTube video production — editing, thumbnails, and retention-optimized pacing that helps channels grow their views and subscribers.</div></div>
-        <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div><div class="exp-title">Brand Films</div><div class="exp-desc">Storytelling that builds trust — brand films and ad creatives that communicate your value and convert viewers into customers.</div></div>
-        <div class="exp-card"><div class="exp-icon"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg></div><div class="exp-title">Reels & Shorts</div><div class="exp-desc">Vertical video editing for Instagram Reels and YouTube Shorts — fast-paced, engaging, and optimized for maximum reach.</div></div>
-      </div>
-    </div>
-
-    <!-- BRANDS -->
-    <div class="brands-wrap">
-      <h2 class="about-sec-title">Brands & Creators I've Helped</h2>
-      <div class="about-sec-line"></div>
-      <p class="brand-intro">From solo content creators to growing businesses — I've helped brands across categories build a video presence that works.</p>
-      <div class="brand-grid">
-        <div class="brand-card"><div class="brand-name">Leap Media</div><div class="brand-type">Media Agency</div></div>
-        <div class="brand-card"><div class="brand-name">Kresco</div><div class="brand-type">Business Brand</div></div>
-        <div class="brand-card"><div class="brand-name">JustPrem Sangha</div><div class="brand-type">Creator Channel</div></div>
-        <div class="brand-card"><div class="brand-name">Videopreneur</div><div class="brand-type">Creator Education</div></div>
-        <div class="brand-card"><div class="brand-name">TheMraadul</div><div class="brand-type">YouTube — 84K Subs</div></div>
-        <div class="brand-card"><div class="brand-name">Urban Nomads</div><div class="brand-type">Travel Content</div></div>
-        <div class="brand-card"><div class="brand-name">Your Brand?</div><div class="brand-type">Let's Work Together</div></div>
-        <div class="brand-card" style="border-color:rgba(200,169,110,0.3);background:rgba(200,169,110,0.04);"><div class="brand-name" style="color:var(--gold);">+50 More</div><div class="brand-type">Since 2017</div></div>
-      </div>
-    </div>
-
-    <!-- GOAL QUOTE -->
-    <div class="goal-wrap">
-      <p class="goal-quote">"My goal is to help <span>brands, creators, and businesses</span> tell their story through video — so powerfully that their audience feels it, trusts them, and acts on it."</p>
-      <div class="goal-sign">— Rajat, Founder · Rj Films Production</div>
-    </div>
+<!-- BRANDS -->
+<div class="brands-wrap">
+  <h2 class="about-sec-title">Brands & Creators I've Helped</h2>
+  <div class="about-sec-line"></div>
+  <p class="brand-intro">From solo content creators to growing businesses — I've helped brands across categories build a video presence that works.</p>
+  <div class="brand-grid">
+    <div class="brand-card"><div class="brand-name">Leap Media</div><div class="brand-type">Media Agency</div></div>
+    <div class="brand-card"><div class="brand-name">Kresco</div><div class="brand-type">Business Brand</div></div>
+    <div class="brand-card"><div class="brand-name">JustPrem Sangha</div><div class="brand-type">Creator Channel</div></div>
+    <div class="brand-card"><div class="brand-name">Videopreneur</div><div class="brand-type">Creator Education</div></div>
+    <div class="brand-card"><div class="brand-name">TheMraadul</div><div class="brand-type">YouTube — 84K Subs</div></div>
+    <div class="brand-card"><div class="brand-name">Urban Nomads</div><div class="brand-type">Travel Content</div></div>
+    <div class="brand-card"><div class="brand-name">Your Brand?</div><div class="brand-type">Let's Work Together</div></div>
+    <div class="brand-card" style="border-color:rgba(200,169,110,0.3);background:rgba(200,169,110,0.04);"><div class="brand-name" style="color:var(--gold);">+50 More</div><div class="brand-type">Since 2017</div></div>
   </div>
-
-  <footer>
-    <p>© 2024 Rj Films Production. All rights reserved.</p>
-    <span>Designed and Developed by Rj Films Production Studio</span>
-  </footer>
 </div>
 
-<!-- ===================== FAQ PAGE ===================== -->
-<div id="page-faq" class="page">
-  <div class="faq-page-wrap">
-    <h2 class="faq-sec-title">Frequently Asked Questions</h2>
-    <div class="faq-sec-line"></div>
-    <p class="faq-sec-sub">Everything you need to know before working with Rj Films Production.<br>Can't find your answer? Just reach out directly.</p>
+<!-- GOAL QUOTE -->
+<div class="goal-wrap">
+  <p class="goal-quote">"My goal is to help <span>brands, creators, and businesses</span> tell their story through video — so powerfully that their audience feels it, trusts them, and acts on it."</p>
+  <div class="goal-sign">— Rajat, Founder · Rj Films Production</div>
+</div>
+<div class="faq-category">Working Together</div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How do I get started with Rj Films Production?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Simply reach out via the <strong>Contact / Connect with Me</strong> section on our website. Send us a message, WhatsApp, or email with a brief about your project — we'll get back to you within 24 hours to understand your goals and suggest the right approach.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What information do you need before starting a project?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We'll need your <strong>goals, target audience, platform (YouTube/Instagram/etc.), reference videos</strong> you like, and your raw footage (if editing only). For shooting projects, we'll also need your location and shoot date.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Do you work with solo creators or only businesses?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Both! We work with <strong>YouTubers, Instagram creators, startup founders, coaches, and established businesses</strong> — anyone who needs high-quality video content that makes an impact.</div></div></div>
 
-    <div class="faq-category">Working Together</div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How do I get started with Rj Films Production?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Simply reach out via the <strong>Contact / Connect with Me</strong> section on our website. Send us a message, WhatsApp, or email with a brief about your project — we'll get back to you within 24 hours to understand your goals and suggest the right approach.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What information do you need before starting a project?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We'll need your <strong>goals, target audience, platform (YouTube/Instagram/etc.), reference videos</strong> you like, and your raw footage (if editing only). For shooting projects, we'll also need your location and shoot date.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Do you work with solo creators or only businesses?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Both! We work with <strong>YouTubers, Instagram creators, startup founders, coaches, and established businesses</strong> — anyone who needs high-quality video content that makes an impact.</div></div></div>
+<div class="faq-category">Editing & Delivery</div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How long does it take to edit a video?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Turnaround depends on the video length and complexity. Typically: <strong>Short-form (Reels/Shorts): 1–2 days. Long-form YouTube (10–20 min): 3–5 days. Brand films or complex edits: 5–8 days.</strong> We always communicate estimated timelines upfront.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How many revisions are included?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We include <strong>2 rounds of revisions</strong> in every project. Our goal is to understand your vision clearly from the start so revisions are minimal — most clients are satisfied on the first delivery.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What format will the final video be delivered in?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We deliver in <strong>MP4 (H.264)</strong> by default, optimized for your target platform. We can also export in ProRes, MOV, or any other format you need. Files are shared via Google Drive or WeTransfer.</div></div></div>
 
-    <div class="faq-category">Editing & Delivery</div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How long does it take to edit a video?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Turnaround depends on the video length and complexity. Typically: <strong>Short-form (Reels/Shorts): 1–2 days. Long-form YouTube (10–20 min): 3–5 days. Brand films or complex edits: 5–8 days.</strong> We always communicate estimated timelines upfront.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How many revisions are included?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We include <strong>2 rounds of revisions</strong> in every project. Our goal is to understand your vision clearly from the start so revisions are minimal — most clients are satisfied on the first delivery.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What format will the final video be delivered in?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We deliver in <strong>MP4 (H.264)</strong> by default, optimized for your target platform. We can also export in ProRes, MOV, or any other format you need. Files are shared via Google Drive or WeTransfer.</div></div></div>
+<div class="faq-category">Pricing & Payments</div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How is pricing structured?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Pricing is based on project scope, video length, and service type. We offer both <strong>per-project pricing and monthly retainer packages</strong> for creators and businesses who need ongoing content. Contact us for a custom quote.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Do you require an advance payment?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Yes, we typically require a <strong>50% advance</strong> before starting work, with the remaining 50% on delivery. For long-term retainers, billing is monthly.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What payment methods do you accept?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We accept <strong>UPI, bank transfer, Razorpay, and international payments via Fiverr/PayPal</strong> for overseas clients.</div></div></div>
 
-    <div class="faq-category">Pricing & Payments</div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">How is pricing structured?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Pricing is based on project scope, video length, and service type. We offer both <strong>per-project pricing and monthly retainer packages</strong> for creators and businesses who need ongoing content. Contact us for a custom quote.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Do you require an advance payment?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Yes, we typically require a <strong>50% advance</strong> before starting work, with the remaining 50% on delivery. For long-term retainers, billing is monthly.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What payment methods do you accept?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We accept <strong>UPI, bank transfer, Razorpay, and international payments via Fiverr/PayPal</strong> for overseas clients.</div></div></div>
+<div class="faq-category">Shooting & Cinematography</div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What locations do you shoot in?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We are based in India and available for shoots <strong>pan-India</strong>. For outstation shoots, travel and accommodation costs are added to the project cost and discussed upfront.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What equipment do you use?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We use <strong>professional-grade cameras, gimbals, lenses, and lighting setups</strong> suited to each shoot. Specific gear depends on the project requirements — we'll always match the equipment to your vision and budget.</div></div></div>
 
-    <div class="faq-category">Shooting & Cinematography</div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What locations do you shoot in?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We are based in India and available for shoots <strong>pan-India</strong>. For outstation shoots, travel and accommodation costs are added to the project cost and discussed upfront.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What equipment do you use?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">We use <strong>professional-grade cameras, gimbals, lenses, and lighting setups</strong> suited to each shoot. Specific gear depends on the project requirements — we'll always match the equipment to your vision and budget.</div></div></div>
+<div class="faq-category">Color Grading</div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Can I get color grading done on footage I've already shot?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Absolutely. We offer <strong>standalone color grading services</strong> for footage shot by anyone. For best results, share the original LOG or flat footage rather than pre-processed files.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Can you match a specific look or color style I like?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Yes! Share reference videos or stills with the look you want and we'll replicate or build on that aesthetic. We can also develop a <strong>signature color profile</strong> for your brand to maintain consistency across all your content.</div></div></div>
 
-    <div class="faq-category">Color Grading</div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Can I get color grading done on footage I've already shot?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Absolutely. We offer <strong>standalone color grading services</strong> for footage shot by anyone. For best results, share the original LOG or flat footage rather than pre-processed files.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Can you match a specific look or color style I like?</span><div class="faq-arrow"><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div></div><div class="faq-a"><div class="faq-a-inner">Yes! Share reference videos or stills with the look you want and we'll replicate or build on that aesthetic. We can also develop a <strong>signature color profile</strong> for your brand to maintain consistency across all your content.</div></div></div>
-
-    <div class="faq-cta-wrap">
-      <div class="faq-cta-title">Still have questions?</div>
-      <p class="faq-cta-sub">We're happy to answer anything before you commit. Just reach out — no pressure, no sales pitch.</p>
-      <a class="btn-hire-faq" onclick="showPage('home','contact')" style="cursor:pointer;">Connect with Me</a>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2024 Rj Films Production. All rights reserved.</p>
-    <span>Designed and Developed by Rj Films Production Studio</span>
-  </footer>
+<div class="faq-cta-wrap">
+  <div class="faq-cta-title">Still have questions?</div>
+  <p class="faq-cta-sub">We're happy to answer anything before you commit. Just reach out — no pressure, no sales pitch.</p>
+  <a class="btn-hire-faq" onclick="showPage('home','contact')" style="cursor:pointer;">Connect with Me</a>
+</div>
+<div class="port-section-divider">
+  <div class="port-section-label">Long-form Videos <span class="port-section-count">20 videos</span></div>
+  <div class="h-grid" id="hGrid"></div>
 </div>
 
-<!-- ===================== PORTFOLIO PAGE ===================== -->
-<div id="page-portfolio" class="page">
-  <div class="port-page-wrap">
-    <h2 class="port-sec-title">Full Portfolio</h2>
-    <div class="port-sec-line"></div>
-    <p class="port-sec-sub">20 Long-form Videos · 10 Shorts & Reels</p>
-
-    <div class="port-section-divider">
-      <div class="port-section-label">Long-form Videos <span class="port-section-count">20 videos</span></div>
-      <div class="h-grid" id="hGrid"></div>
-    </div>
-
-    <div class="port-section-divider">
-      <div class="port-section-label">Shorts & Reels <span class="port-section-count">10 videos</span></div>
-      <div class="v-grid" id="vGrid"></div>
-    </div>
-
-    <div class="port-cta-bottom">
-      <div class="port-cta-title">Like what you see?</div>
-      <p class="port-cta-sub">Let's create something exceptional together for your brand or channel.</p>
-      <a class="btn-hire-p" onclick="showPage('home','contact')" style="cursor:pointer;">Hire Me</a>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2024 Rj Films Production. All rights reserved.</p>
-    <span>Designed and Developed by Rj Films Production Studio</span>
-  </footer>
+<div class="port-section-divider">
+  <div class="port-section-label">Shorts & Reels <span class="port-section-count">10 videos</span></div>
+  <div class="v-grid" id="vGrid"></div>
 </div>
 
-<!-- ===================== JAVASCRIPT ===================== -->
-<script>
-// ---- Page Navigation ----
-function showPage(pageId, scrollTo) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + pageId).classList.add('active');
-  window.scrollTo(0, 0);
+<div class="port-cta-bottom">
+  <div class="port-cta-title">Like what you see?</div>
+  <p class="port-cta-sub">Let's create something exceptional together for your brand or channel.</p>
+  <a class="btn-hire-p" onclick="showPage('home','contact')" style="cursor:pointer;">Hire Me</a>
+</div>
 
-  // Update nav active state
-  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-  const navMap = {home:'nav-home', about:'nav-about', faq:'nav-faq', portfolio:'nav-work'};
-  const navId = pageId === 'portfolio' ? 'nav-work' : 'nav-' + pageId;
-  const el = document.getElementById(navId);
-  if(el) el.classList.add('active');
-
-  // Scroll to section if specified
-  if(scrollTo) {
-    setTimeout(() => {
-      const target = document.getElementById(scrollTo);
-      if(target) target.scrollIntoView({behavior:'smooth'});
-    }, 80);
-  }
-}
-
-// ---- FAQ Accordion ----
-function toggleFaq(el) {
-  const item = el.closest('.faq-item');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-  if(!isOpen) item.classList.add('open');
-}
-
-// ---- Portfolio Grid ----
-const hLabels = [
-  {label:"Conversion Oriented Edit",tag:"YouTube"},
-  {label:"Retention Ad Edit",tag:"Ad Film"},
-  {label:"Vlog Style Storytelling",tag:"YouTube"},
-  {label:"Book Summary Edit",tag:"YouTube"},
-  {label:"Cinematic + Animation",tag:"Brand Film"},
-  {label:"Brand Film",tag:"Brand"},
-  {label:"Product Showcase Edit",tag:"Instagram"},
-  {label:"Travel Vlog Edit",tag:"YouTube"},
-  {label:"Educational Long-form",tag:"YouTube"},
-  {label:"Podcast Edit",tag:"YouTube"},
-  {label:"Interview Edit",tag:"Corporate"},
-  {label:"Documentary Style",tag:"Brand"},
-  {label:"Event Highlights",tag:"Event"},
-  {label:"Talking Head Edit",tag:"YouTube"},
-  {label:"Corporate Promo Film",tag:"Corporate"},
-  {label:"Social Proof Video",tag:"Ad Film"},
-  {label:"Mini Documentary",tag:"YouTube"},
-  {label:"Fashion/Lifestyle Film",tag:"Brand"},
-  {label:"Motivational Edit",tag:"YouTube"},
-  {label:"2022 Rewind / Recap",tag:"Special"},
-];
-const vLabels = [
-  {label:"Cinematic Reel",tag:"Instagram"},
-  {label:"2022 Rewind",tag:"YouTube Shorts"},
-  {label:"Quick Brand Promo",tag:"Reels"},
-  {label:"Urban Nomads",tag:"Travel Reels"},
-  {label:"BTS Short",tag:"Instagram"},
-  {label:"Product Teaser",tag:"Reels"},
-  {label:"Motivational Short",tag:"YouTube Shorts"},
-  {label:"Before & After Edit",tag:"Reels"},
-  {label:"Day in the Life",tag:"Instagram"},
-  {label:"Color Grade Showcase",tag:"Shorts"},
-];
-const gradients = [
-  "linear-gradient(135deg,#1a1005 0%,#0d0d0d 100%)",
-  "linear-gradient(135deg,#12100a 0%,#0d0d0d 100%)",
-  "linear-gradient(135deg,#0e0e0e 0%,#181510 100%)",
-  "linear-gradient(135deg,#0a0a1a 0%,#0d0d0d 100%)",
-  "linear-gradient(135deg,#1a0e0e 0%,#0d0d0d 100%)",
-  "linear-gradient(135deg,#0e1a10 0%,#0a0a0a 100%)",
-  "linear-gradient(160deg,#1a1208 0%,#0a0a0a 100%)",
-];
-
-const hGrid = document.getElementById('hGrid');
-hLabels.forEach((v, i) => {
-  const g = gradients[i % gradients.length];
-  hGrid.innerHTML += `<div class="h-card" onclick="openVideo(${i+1},'h')">
-    <div class="card-bg" style="background:${g};"></div>
-    <div class="card-overlay"></div>
-    <div class="card-play"><div class="card-play-arrow"></div></div>
-    <div class="card-num">${String(i+1).padStart(2,'0')}</div>
-    <div class="card-label"><div class="card-label-text">${v.label}</div><span class="card-label-tag">${v.tag}</span></div>
-  </div>`;
-});
-
-const vGrid = document.getElementById('vGrid');
-vLabels.forEach((v, i) => {
-  const g = gradients[i % gradients.length];
-  vGrid.innerHTML += `<div class="v-card" onclick="openVideo(${i+1},'v')">
-    <div class="card-bg" style="background:${g};"></div>
-    <div class="card-overlay"></div>
-    <div class="card-play"><div class="card-play-arrow"></div></div>
-    <div class="card-num">${String(i+1).padStart(2,'0')}</div>
-    <div class="card-label" style="position:absolute;bottom:10px;left:10px;right:10px;"><div class="card-label-text">${v.label}</div><span class="card-label-tag">${v.tag}</span></div>
-  </div>`;
-});
-
-function openVideo(num, type) {
-  // Replace with actual YouTube links
-  alert('Add your YouTube link for video ' + (type === 'h' ? 'H' : 'V') + num + ' here.');
-}
-</script>
-</body>
-</html>
+Close
