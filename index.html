@@ -36,28 +36,24 @@ footer span{display:block;margin-top:6px;font-size:11px;color:rgba(138,128,112,0
 .yt-frame-wrap{
   width:100%;
   background:#f1f1f1;
-  border-radius:20px;
+  border-radius:14px;
   overflow:visible;
-  margin-bottom:26px;
+  margin-bottom:36px;
   position:relative;
   transition: box-shadow 0.5s ease, transform 0.45s ease;
   cursor:pointer;
   box-shadow:
-  0 0 0 1px rgba(200,169,110,0.15),
-  0 36px 36px rgba(0,0,0,0.45),
-  0 36px 36px rgba(210,145,50,0.12);
+    0 4px 20px rgba(0,0,0,0.85),
+    0 15px 40px rgba(0,0,0,0.55),
+    0 25px 60px rgba(180,120,40,0.15);
 }
 .yt-frame-wrap > *{border-radius:14px;overflow:hidden;}
 .yt-frame-wrap:hover,.yt-frame-wrap:active{
-  transform: translateY(-6px) scale(1.009);
+  transform: translateY(-4px) scale(1.005);
   box-shadow:
-    0 0 0 10px rgba(200,169,110,0.22),
-    0 20px 20px rgba(5,5,5,5.88),
-    0 26px 26px rgba(10,10,10,10.7),
-    0 26px 26px rgba(100,100,50,0.45),
-    0 26px 26px rgba(190,130,30,0.38),
-    0 26px 26px rgba(160,100,20,0.28),
-    0 0 36px rgba(200,169,110,0.16);
+    0 0 0 1px rgba(200,169,110,0.15),
+    0 10px 40px rgba(0,0,0,0.6),
+    0 25px 70px rgba(210,145,50,0.22);
 }
 .yt-browser-bar{background:#f1f1f1;padding:10px 16px;display:flex;align-items:center;gap:8px;}
 .yt-dot{width:10px;height:10px;border-radius:50%;}
@@ -260,6 +256,16 @@ textarea.finput{min-height:130px;resize:vertical;}
 .port-cta-sub{font-size:13.5px;color:var(--muted);margin-bottom:26px;}
 .btn-hire-p{display:inline-block;background:rgba(200,169,110,0.85);border:2px solid var(--gold);color:#1a1208;padding:14px 44px;font-size:15px;font-family:'Playfair Display',serif;font-weight:600;cursor:pointer;border-radius:6px;letter-spacing:0.05em;transition:all 0.3s;text-decoration:none;}
 .btn-hire-p:hover{background:var(--gold);box-shadow:0 0 28px rgba(200,169,110,0.45);}
+
+.yt-controls,
+.yt-title-bar,
+.yt-row,
+.yt-progressbar,
+.yt-bottom,
+.yt-playtime{
+    display:none !important;
+}
+
 </style>
 </head>
 <body>
@@ -291,17 +297,31 @@ textarea.finput{min-height:130px;resize:vertical;}
           <div style="width:22px;height:22px;border-radius:50%;background:#ddd;margin-left:8px;"></div>
         </div>
         <div class="yt-video-area">
-<iframe
-  width="100%"
-  height="100%"
-  src="https://www.youtube.com/embed/V1gHHgzOFJw"
-  title="RJ Films Production"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-  style="position:absolute;inset:0;width:100%;height:100%;border:none;">
-</iframe>       
-          
+          <div class="yt-video-bg"></div>
+          <div style="position:absolute;inset:0;background:linear-gradient(160deg,#2c1e0e 0%,#1a1208 35%,#0d0b08 70%,#080604 100%);"></div>
+          <div class="yt-controls">
+            <div class="yt-title-bar">Made with Photoshop Generative Fill AI | New Future for Videos? (Hindi)</div>
+            <div class="yt-row">
+              <div class="yt-avatar"></div>
+              <span class="yt-chan">TheMraadul · 84K subscribers</span>
+              <span style="background:transparent;border:1px solid #555;color:#fff;border-radius:14px;padding:2px 9px;font-size:10px;">Join</span>
+              <span class="yt-badge" style="background:#3ea6ff;color:#000;">Analytics</span>
+              <span class="yt-badge" style="background:#2ba640;color:#fff;">Edit video</span>
+              <span class="yt-badge" style="background:#3ea6ff;color:#000;">⟳ Remix ▼</span>
+              <span style="margin-left:auto;display:flex;gap:10px;">
+                <span style="font-size:10px;color:#ccc;">👍 2K</span>
+                <span style="font-size:10px;color:#ccc;">👎</span>
+                <span style="font-size:10px;color:#ccc;">↗ Share</span>
+                <span style="font-size:10px;color:#ccc;">📢 Promote</span>
+                <span style="font-size:10px;color:#ccc;">⬇ Download</span>
+                <span style="font-size:10px;color:#ccc;">···</span>
+              </span>
+            </div>
+            <div class="yt-progressbar"><div class="yt-progress-fill"></div></div>
+            <div class="yt-bottom">
+              <span class="yt-playtime">0:01 / 1:11</span>
+              <div style="display:flex;gap:8px;font-size:12px;color:rgba(255,255,255,0.5);">
+                <span>🔇</span><span>⛶</span><span>⋮</span>
               </div>
             </div>
           </div>
